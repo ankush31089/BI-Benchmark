@@ -1,0 +1,697 @@
+[
+    {
+        "Query ID": "001",
+        "Natural Language Query": "What fare conditions are likely to be booked more frequently in the upcoming months based on historical booking trends?",
+        "Category": "Predictive",
+        "Table(s) Used": [
+            "AIRLINES_BOOKINGS",
+            "AIRLINES_TICKET_FLIGHTS"
+        ],
+        "Domain": "Transportation",
+        "Complexity": "Intermediate"
+    },
+    {
+        "Query ID": "002",
+        "Natural Language Query": "Which aircraft types are more likely to experience delays based on their past performance, and how does this impact future flight scheduling?",
+        "Category": "Predictive",
+        "Table(s) Used": [
+            "AIRLINES_AIRCRAFTS_DATA",
+            "AIRLINES_FLIGHTS"
+        ],
+        "Domain": "Transportation",
+        "Complexity": "Intermediate"
+    },
+    {
+        "Query ID": "003",
+        "Natural Language Query": "Which road conditions are most commonly associated with collisions resulting in complaints of pain?",
+        "Category": "Predictive",
+        "Table(s) Used": [
+            "CALIFORNIA_TRAFFIC_COLLISION_COLLISIONS",
+            "CALIFORNIA_TRAFFIC_COLLISION_VICTIMS"
+        ],
+        "Domain": "Transportation",
+        "Complexity": "Intermediate"
+    },
+    {
+        "Query ID": "004",
+        "Natural Language Query": "What factors contribute to the severity of injuries sustained by pedestrians in collisions, and how do these factors interact with each other?",
+        "Category": "Predictive",
+        "Table(s) Used": [
+            "CALIFORNIA_TRAFFIC_COLLISION_COLLISIONS",
+            "CALIFORNIA_TRAFFIC_COLLISION_PARTIES",
+            "CALIFORNIA_TRAFFIC_COLLISION_VICTIMS"
+        ],
+        "Domain": "Transportation",
+        "Complexity": "Advanced"
+    },
+    {
+        "Query ID": "005",
+        "Natural Language Query": "How do the demographics of drivers (such as age and sex) influence the likelihood of being at fault in a collision, and do these relationships vary by type of collision?",
+        "Category": "Predictive",
+        "Table(s) Used": [
+            "CALIFORNIA_TRAFFIC_COLLISION_PARTIES",
+            "CALIFORNIA_TRAFFIC_COLLISION_COLLISIONS"
+        ],
+        "Domain": "Transportation",
+        "Complexity": "Intermediate"
+    },
+    {
+        "Query ID": "006",
+        "Natural Language Query": "Using historical data, can we predict the likelihood of death from specific causes based on a combination of demographic factors, including age, race, sex, and education level?",
+        "Category": "Predictive",
+        "Table(s) Used": [
+            "DEATH_DEATHRECORDS",
+            "DEATH_AGERECODE12",
+            "DEATH_AGERECODE27",
+            "DEATH_AGERECODE52",
+            "DEATH_EDUCATION2003REVISION",
+            "DEATH_RACE",
+            "DEATH_RACERECODE3",
+            "DEATH_RACERECODE5",
+            "DEATH_SEX"
+        ],
+        "Domain": "Healthcare",
+        "Complexity": "Advanced"
+    },
+    {
+        "Query ID": "007",
+        "Natural Language Query": "Which driver modal is more likely to have higher delivery distances?",
+        "Category": "Predictive",
+        "Table(s) Used": [
+            "DELIVERY_CENTER_DELIVERIES",
+            "DELIVERY_CENTER_DRIVERS"
+        ],
+        "Domain": "Logistics & Retail",
+        "Complexity": "Intermediate"
+    },
+    {
+        "Query ID": "008",
+        "Natural Language Query": "How does the order creation hour affect the order status across different store segments?",
+        "Category": "Predictive",
+        "Table(s) Used": [
+            "DELIVERY_CENTER_ORDERS",
+            "DELIVERY_CENTER_STORES"
+        ],
+        "Domain": "Logistics & Retail",
+        "Complexity": "Intermediate"
+    },
+    {
+        "Query ID": "009",
+        "Natural Language Query": "Can we predict the likelihood of an order being canceled based on the store segment, order amount, and payment method?",
+        "Category": "Predictive",
+        "Table(s) Used": [
+            "DELIVERY_CENTER_ORDERS",
+            "DELIVERY_CENTER_STORES",
+            "DELIVERY_CENTER_PAYMENTS"
+        ],
+        "Domain": "Logistics & Retail",
+        "Complexity": "Advanced"
+    },
+    {
+        "Query ID": "010",
+        "Natural Language Query": "What is the likelihood that the number of transactions will increase in the next block based on historical trends?",
+        "Category": "Predictive",
+        "Table(s) Used": [
+            "ETHEREUM_BLOCKCHAIN_BLOCKS",
+            "ETHEREUM_BLOCKCHAIN_TRANSACTIONS"
+        ],
+        "Domain": "Finance",
+        "Complexity": "Intermediate"
+    },
+    {
+        "Query ID": "011",
+        "Natural Language Query": "How does the build-up play speed of a team affect their chances of winning a match, and which teams are most likely to adopt a fast build-up play strategy?",
+        "Category": "Predictive",
+        "Table(s) Used": [
+            "EU_SOCCER_MATCH",
+            "EU_SOCCER_TEAM_ATTRIBUTES"
+        ],
+        "Domain": "Sports & Entertainment",
+        "Complexity": "Intermediate"
+    },
+    {
+        "Query ID": "012",
+        "Natural Language Query": "What is the relationship between a team's defensive aggression and their likelihood of conceding goals, and how does this vary across different leagues?",
+        "Category": "Predictive",
+        "Table(s) Used": [
+            "EU_SOCCER_MATCH",
+            "EU_SOCCER_TEAM_ATTRIBUTES",
+            "EU_SOCCER_LEAGUE"
+        ],
+        "Domain": "Sports & Entertainment",
+        "Complexity": "Advanced"
+    },
+    {
+        "Query ID": "013",
+        "Natural Language Query": "What are the key factors that influence a team's ability to create scoring chances, and how can teams optimize their strategy to maximize their chances of scoring based on their strengths and weaknesses?",
+        "Category": "Predictive",
+        "Table(s) Used": [
+            "EU_SOCCER_MATCH",
+            "EU_SOCCER_TEAM_ATTRIBUTES",
+            "EU_SOCCER_PLAYER_ATTRIBUTES"
+        ],
+        "Domain": "Sports & Entertainment",
+        "Complexity": "Advanced"
+    },
+    {
+        "Query ID": "014",
+        "Natural Language Query": "Which sellers are likely to experience an increase in sales based on historical trends and customer reviews?",
+        "Category": "Predictive",
+        "Table(s) Used": [
+            "E_COMMERCE_SELLERS",
+            "E_COMMERCE_ORDER_ITEMS",
+            "E_COMMERCE_ORDER_REVIEWS",
+            "E_COMMERCE_ORDERS"
+        ],
+        "Domain": "E-commerce",
+        "Complexity": "Advanced"
+    },
+    {
+        "Query ID": "015",
+        "Natural Language Query": "Which drivers are most likely to achieve the fastest lap times in upcoming races?",
+        "Category": "Predictive",
+        "Table(s) Used": [
+            "F1_LAP_TIMES",
+            "F1_LAP_TIME_STATS",
+            "F1_DRIVER_STANDINGS",
+            "F1_DRIVERS",
+            "F1_RACES"
+        ],
+        "Domain": "Sports & Entertainment",
+        "Complexity": "Advanced"
+    },
+    {
+        "Query ID": "016",
+        "Natural Language Query": "Which constructors are likely to see an increase in points scored across the next few seasons?",
+        "Category": "Predictive",
+        "Table(s) Used": [
+            "F1_CONSTRUCTORS",
+            "F1_CONSTRUCTORS_EXT",
+            "F1_CONSTRUCTOR_STANDINGS",
+            "F1_CONSTRUCTOR_RESULTS",
+            "F1_RACES_EXT",
+            "F1_TDR_OVERRIDES",
+            "F1_TEAM_DRIVER_RANKS"
+        ],
+        "Domain": "Sports & Entertainment",
+        "Complexity": "Advanced"
+    },
+    {
+        "Query ID": "017",
+        "Natural Language Query": "Are there specific circuits where certain constructors consistently perform better, and can we predict future race outcomes based on this?",
+        "Category": "Predictive",
+        "Table(s) Used": [
+            "F1_CIRCUITS",
+            "F1_CONSTRUCTORS",
+            "F1_CONSTRUCTOR_RESULTS",
+            "F1_RACES",
+            "F1_RESULTS"
+        ],
+        "Domain": "Sports & Entertainment",
+        "Complexity": "Advanced"
+    },
+    {
+        "Query ID": "018",
+        "Natural Language Query": "Can we predict the likelihood of a driver achieving a podium finish based on their past performance and the circuit characteristics?",
+        "Category": "Predictive",
+        "Table(s) Used": [
+            "F1_RESULTS",
+            "F1_RACES",
+            "F1_CIRCUITS",
+            "F1_DRIVERS"
+        ],
+        "Domain": "Sports & Entertainment",
+        "Complexity": "Advanced"
+    },
+    {
+        "Query ID": "019",
+        "Natural Language Query": "How do the modes of sample files influence the choice of programming languages in repositories?",
+        "Category": "Predictive",
+        "Table(s) Used": [
+            "GITHUB_REPOS_SAMPLE_FILES",
+            "GITHUB_REPOS_LANGUAGES"
+        ],
+        "Domain": "Software & IT",
+        "Complexity": "Intermediate"
+    },
+    {
+        "Query ID": "020",
+        "Natural Language Query": "Can we predict the watch count of a repository based on its programming languages, licenses, and types of sample files?",
+        "Category": "Predictive",
+        "Table(s) Used": [
+            "GITHUB_REPOS_SAMPLE_REPOS",
+            "GITHUB_REPOS_LANGUAGES",
+            "GITHUB_REPOS_LICENSES",
+            "GITHUB_REPOS_SAMPLE_FILES"
+        ],
+        "Domain": "Software & IT",
+        "Complexity": "Advanced"
+    },
+    {
+        "Query ID": "021",
+        "Natural Language Query": "What combination of factors, including programming languages, licenses, and sample file modes, best predicts the popularity of a repository?",
+        "Category": "Predictive",
+        "Table(s) Used": [
+            "GITHUB_REPOS_LANGUAGES",
+            "GITHUB_REPOS_LICENSES",
+            "GITHUB_REPOS_SAMPLE_FILES",
+            "GITHUB_REPOS_SAMPLE_REPOS"
+        ],
+        "Domain": "Software & IT",
+        "Complexity": "Advanced"
+    },
+    {
+        "Query ID": "022",
+        "Natural Language Query": "What type of ad formats are likely to be disapproved based on historical data?",
+        "Category": "Predictive",
+        "Table(s) Used": [
+            "GOOGLE_ADS_TRANSPARENCY_CENTER_CREATIVE_STATS",
+            "GOOGLE_ADS_TRANSPARENCY_CENTER_REMOVED_CREATIVE_STATS"
+        ],
+        "Domain": "Marketing",
+        "Complexity": "Intermediate"
+    },
+    {
+        "Query ID": "023",
+        "Natural Language Query": "How do the audience selection approaches impact the likelihood of ad removal across different regions?",
+        "Category": "Predictive",
+        "Table(s) Used": [
+            "GOOGLE_ADS_TRANSPARENCY_CENTER_CREATIVE_STATS",
+            "GOOGLE_ADS_TRANSPARENCY_CENTER_REMOVED_CREATIVE_STATS"
+        ],
+        "Domain": "Marketing",
+        "Complexity": "Intermediate"
+    },
+    {
+        "Query ID": "024",
+        "Natural Language Query": "What is the likelihood of individuals having a specific phenotype based on their population?",
+        "Category": "Predictive",
+        "Table(s) Used": [
+            "HUMAN_GENOME_VARIANTS__1000_GENOMES_PEDIGREE",
+            "HUMAN_GENOME_VARIANTS__1000_GENOMES_SAMPLE_INFO"
+        ],
+        "Domain": "Healthcare",
+        "Complexity": "Intermediate"
+    },
+    {
+        "Query ID": "025",
+        "Natural Language Query": "Which populations are more likely to have a higher number of siblings?",
+        "Category": "Predictive",
+        "Table(s) Used": [
+            "HUMAN_GENOME_VARIANTS__1000_GENOMES_PEDIGREE",
+            "HUMAN_GENOME_VARIANTS__1000_GENOMES_SAMPLE_INFO"
+        ],
+        "Domain": "Healthcare",
+        "Complexity": "Intermediate"
+    },
+    {
+        "Query ID": "026",
+        "Natural Language Query": "How does the relationship between individuals affect the likelihood of them having the same phenotype?",
+        "Category": "Predictive",
+        "Table(s) Used": [
+            "HUMAN_GENOME_VARIANTS__1000_GENOMES_PEDIGREE",
+            "HUMAN_GENOME_VARIANTS__1000_GENOMES_SAMPLE_INFO"
+        ],
+        "Domain": "Healthcare",
+        "Complexity": "Intermediate"
+    },
+    {
+        "Query ID": "027",
+        "Natural Language Query": "Are there any patterns in the population descriptions that can help predict the presence of unexpected parent-child relationships?",
+        "Category": "Predictive",
+        "Table(s) Used": [
+            "HUMAN_GENOME_VARIANTS__1000_GENOMES_SAMPLE_INFO"
+        ],
+        "Domain": "Healthcare",
+        "Complexity": "Basic"
+    },
+    {
+        "Query ID": "028",
+        "Natural Language Query": "What factors contribute to the likelihood of an individual being part of a low-coverage pilot based on their family ID, population, and relationship?",
+        "Category": "Predictive",
+        "Table(s) Used": [
+            "HUMAN_GENOME_VARIANTS__1000_GENOMES_PEDIGREE",
+            "HUMAN_GENOME_VARIANTS__1000_GENOMES_SAMPLE_INFO"
+        ],
+        "Domain": "Healthcare",
+        "Complexity": "Intermediate"
+    },
+    {
+        "Query ID": "029",
+        "Natural Language Query": "Which store locations are most likely to have higher sales in the next quarter?",
+        "Category": "Predictive",
+        "Table(s) Used": [
+            "IOWA_LIQUOR_SALES_SALES"
+        ],
+        "Domain": "Logistics & Retail",
+        "Complexity": "Basic"
+    },
+    {
+        "Query ID": "030",
+        "Natural Language Query": "What categories of items are more likely to see an increase in sales across different counties?",
+        "Category": "Predictive",
+        "Table(s) Used": [
+            "IOWA_LIQUOR_SALES_SALES"
+        ],
+        "Domain": "Logistics & Retail",
+        "Complexity": "Basic"
+    },
+    {
+        "Query ID": "031",
+        "Natural Language Query": "How do sales patterns vary by store location and category, and which combinations are likely to see growth?",
+        "Category": "Predictive",
+        "Table(s) Used": [
+            "IOWA_LIQUOR_SALES_SALES"
+        ],
+        "Domain": "Logistics & Retail",
+        "Complexity": "Basic"
+    },
+    {
+        "Query ID": "032",
+        "Natural Language Query": "What factors, including vendor, category, and item description, best predict the likelihood of high sales volume in a given store location?",
+        "Category": "Predictive",
+        "Table(s) Used": [
+            "IOWA_LIQUOR_SALES_SALES"
+        ],
+        "Domain": "Logistics & Retail",
+        "Complexity": "Basic"
+    },
+    {
+        "Query ID": "033",
+        "Natural Language Query": "How can we use historical sales data to predict which store locations are at risk of experiencing low sales in the next quarter, considering factors like category and vendor?",
+        "Category": "Predictive",
+        "Table(s) Used": [
+            "IOWA_LIQUOR_SALES_SALES"
+        ],
+        "Domain": "Logistics & Retail",
+        "Complexity": "Basic"
+    },
+    {
+        "Query ID": "034",
+        "Natural Language Query": "What teams are most likely to win matches in the upcoming season based on past performance?",
+        "Category": "Predictive",
+        "Table(s) Used": [
+            "IPL_MATCH",
+            "IPL_TEAM",
+            "IPL_PLAYER_MATCH"
+        ],
+        "Domain": "Sports & Entertainment",
+        "Complexity": "Advanced"
+    },
+    {
+        "Query ID": "035",
+        "Natural Language Query": "Which players are likely to score the most runs in the next season based on their past batting performance?",
+        "Category": "Predictive",
+        "Table(s) Used": [
+            "IPL_BATSMAN_SCORED",
+            "IPL_PLAYER",
+            "IPL_PLAYER_MATCH",
+            "IPL_MATCH"
+        ],
+        "Domain": "Sports & Entertainment",
+        "Complexity": "Advanced"
+    },
+    {
+        "Query ID": "036",
+        "Natural Language Query": "How do different batting positions influence the likelihood of scoring runs across various innings?",
+        "Category": "Predictive",
+        "Table(s) Used": [
+            "IPL_BALL_BY_BALL",
+            "IPL_BATSMAN_SCORED"
+        ],
+        "Domain": "Sports & Entertainment",
+        "Complexity": "Intermediate"
+    },
+    {
+        "Query ID": "037",
+        "Natural Language Query": "What factors, including player roles and team composition, best predict the success of a team in terms of winning matches and tournaments?",
+        "Category": "Predictive",
+        "Table(s) Used": [
+            "IPL_MATCH",
+            "IPL_PLAYER_MATCH",
+            "IPL_TEAM",
+            "IPL_BALL_BY_BALL",
+            "IPL_BATSMAN_SCORED",
+            "IPL_EXTRA_RUNS",
+            "IPL_WICKET_TAKEN"
+        ],
+        "Domain": "Sports & Entertainment",
+        "Complexity": "Advanced"
+    },
+    {
+        "Query ID": "038",
+        "Natural Language Query": "Which users are most likely to make a purchase based on their past actions?",
+        "Category": "Predictive",
+        "Table(s) Used": [
+            "LOG_ACTION_LOG",
+            "LOG_MST_USERS",
+            "LOG_PURCHASE_LOG"
+        ],
+        "Domain": "Software & IT",
+        "Complexity": "Advanced"
+    },
+    {
+        "Query ID": "039",
+        "Natural Language Query": "What categories of products are likely to see increased sales in the next quarter based on historical trends?",
+        "Category": "Predictive",
+        "Table(s) Used": [
+            "LOG_MST_CATEGORIES",
+            "LOG_MST_PRODUCTS_20161201",
+            "LOG_MST_PRODUCTS_20170101",
+            "LOG_PRODUCT_SALES"
+        ],
+        "Domain": "Software & IT",
+        "Complexity": "Advanced"
+    },
+    {
+        "Query ID": "040",
+        "Natural Language Query": "Can we identify patterns in user behavior, such as viewing certain products or categories, that precede a purchase, and use this to predict future purchases?",
+        "Category": "Predictive",
+        "Table(s) Used": [
+            "LOG_ACTION_LOG",
+            "LOG_MST_PRODUCTS_20161201",
+            "LOG_MST_PRODUCTS_20170101",
+            "LOG_MST_CATEGORIES",
+            "LOG_PURCHASE_LOG"
+        ],
+        "Domain": "Software & IT",
+        "Complexity": "Advanced"
+    },
+    {
+        "Query ID": "041",
+        "Natural Language Query": "How can we use clustering analysis to group users based on their purchase history and behavior, and then use these clusters to predict future purchasing patterns?",
+        "Category": "Predictive",
+        "Table(s) Used": [
+            "LOG_ACTION_LOG",
+            "LOG_MST_USERS",
+            "LOG_PURCHASE_LOG",
+            "LOG_MST_PRODUCTS_20161201",
+            "LOG_MST_PRODUCTS_20170101"
+        ],
+        "Domain": "Software & IT",
+        "Complexity": "Advanced"
+    },
+    {
+        "Query ID": "042",
+        "Natural Language Query": "Which customers are likely to make the most purchases in the next quarter?",
+        "Category": "Predictive",
+        "Table(s) Used": [
+            "MUSIC_CUSTOMER",
+            "MUSIC_INVOICE"
+        ],
+        "Domain": "Sports & Entertainment",
+        "Complexity": "Intermediate"
+    },
+    {
+        "Query ID": "043",
+        "Natural Language Query": "Based on historical data, which protein expressions are likely to be associated with higher genome doublings across different sample types?",
+        "Category": "Predictive",
+        "Table(s) Used": [
+            "PANCANCER_ATLAS_FILTERED_PURITY_PLOIDY_ALL_SAMPLES_FILTERED",
+            "PANCANCER_ATLAS_FILTERED_TCGA_RPPA_PANCAN_CLEAN_FILTERED"
+        ],
+        "Domain": "Healthcare",
+        "Complexity": "Intermediate"
+    },
+    {
+        "Query ID": "044",
+        "Natural Language Query": "What types of patent owners are more likely to have their patents disclosed in the future?",
+        "Category": "Predictive",
+        "Table(s) Used": [
+            "PATENTS_GOOGLE_DISCLOSURES_13"
+        ],
+        "Domain": "Legal and Technology",
+        "Complexity": "Basic"
+    },
+    {
+        "Query ID": "045",
+        "Natural Language Query": "Which categories of patents are likely to see an increase in disclosure events based on past performance?",
+        "Category": "Predictive",
+        "Table(s) Used": [
+            "PATENTS_GOOGLE_DISCLOSURES_13"
+        ],
+        "Domain": "Legal and Technology",
+        "Complexity": "Basic"
+    },
+    {
+        "Query ID": "046",
+        "Natural Language Query": "How do different licensing commitments affect the likelihood of patent disclosure across various patent categories?",
+        "Category": "Predictive",
+        "Table(s) Used": [
+            "PATENTS_GOOGLE_DISCLOSURES_13"
+        ],
+        "Domain": "Legal and Technology",
+        "Complexity": "Basic"
+    },
+    {
+        "Query ID": "047",
+        "Natural Language Query": "Which patent categories are more likely to have a higher rate of disclosure based on the type of committee project they are associated with?",
+        "Category": "Predictive",
+        "Table(s) Used": [
+            "PATENTS_GOOGLE_DISCLOSURES_13"
+        ],
+        "Domain": "Legal and Technology",
+        "Complexity": "Basic"
+    },
+    {
+        "Query ID": "048",
+        "Natural Language Query": "Can we predict the likelihood of a patent being disclosed based on its copyright status, licensing commitment, and patent owner type?",
+        "Category": "Predictive",
+        "Table(s) Used": [
+            "PATENTS_GOOGLE_DISCLOSURES_13"
+        ],
+        "Domain": "Legal and Technology",
+        "Complexity": "Basic"
+    },
+    {
+        "Query ID": "049",
+        "Natural Language Query": "How do the reciprocity and third-party involvement factors influence the probability of patent disclosure for different patent categories and owners?",
+        "Category": "Predictive",
+        "Table(s) Used": [
+            "PATENTS_GOOGLE_DISCLOSURES_13"
+        ],
+        "Domain": "Legal and Technology",
+        "Complexity": "Basic"
+    },
+    {
+        "Query ID": "050",
+        "Natural Language Query": "Which customers are most likely to make a payment in the next quarter?",
+        "Category": "Predictive",
+        "Table(s) Used": [
+            "SQLITE_SAKILA_CUSTOMER",
+            "SQLITE_SAKILA_PAYMENT"
+        ],
+        "Domain": "Sports & Entertainment",
+        "Complexity": "Intermediate"
+    },
+    {
+        "Query ID": "051",
+        "Natural Language Query": "What film categories are expected to have the highest rental rates based on past performance?",
+        "Category": "Predictive",
+        "Table(s) Used": [
+            "SQLITE_SAKILA_FILM_CATEGORY",
+            "SQLITE_SAKILA_RENTAL",
+            "SQLITE_SAKILA_INVENTORY",
+            "SQLITE_SAKILA_FILM"
+        ],
+        "Domain": "Sports & Entertainment",
+        "Complexity": "Advanced"
+    },
+    {
+        "Query ID": "052",
+        "Natural Language Query": "Which customer segments are more likely to rent films from specific categories?",
+        "Category": "Predictive",
+        "Table(s) Used": [
+            "SQLITE_SAKILA_CUSTOMER",
+            "SQLITE_SAKILA_RENTAL",
+            "SQLITE_SAKILA_INVENTORY",
+            "SQLITE_SAKILA_FILM_CATEGORY",
+            "SQLITE_SAKILA_FILM"
+        ],
+        "Domain": "Sports & Entertainment",
+        "Complexity": "Advanced"
+    },
+    {
+        "Query ID": "053",
+        "Natural Language Query": "Can we identify factors that predict whether a customer will return a film late?",
+        "Category": "Predictive",
+        "Table(s) Used": [
+            "SQLITE_SAKILA_RENTAL",
+            "SQLITE_SAKILA_CUSTOMER",
+            "SQLITE_SAKILA_FILM",
+            "SQLITE_SAKILA_INVENTORY"
+        ],
+        "Domain": "Sports & Entertainment",
+        "Complexity": "Advanced"
+    },
+    {
+        "Query ID": "054",
+        "Natural Language Query": "What features are most likely to be dropped by users in future versions?",
+        "Category": "Predictive",
+        "Table(s) Used": [
+            "STACKING_EDA"
+        ],
+        "Domain": "Software & IT",
+        "Complexity": "Basic"
+    },
+    {
+        "Query ID": "055",
+        "Natural Language Query": "How does the correlation between features influence the likelihood of a feature being dropped in later versions?",
+        "Category": "Predictive",
+        "Table(s) Used": [
+            "STACKING_EDA",
+            "STACKING_SOLUTION"
+        ],
+        "Domain": "Software & IT",
+        "Complexity": "Intermediate"
+    },
+    {
+        "Query ID": "056",
+        "Natural Language Query": "What is the likelihood of a sample having a high beta value based on its platform?",
+        "Category": "Predictive",
+        "Table(s) Used": [
+            "TCGA_HG19_DATA_V0_DNA_METHYLATION"
+        ],
+        "Domain": "Healthcare",
+        "Complexity": "Basic"
+    },
+    {
+        "Query ID": "057",
+        "Natural Language Query": "Which match types are likely to see growth in the number of matches across different promotions?",
+        "Category": "Predictive",
+        "Table(s) Used": [
+            "WWE_MATCHES",
+            "WWE_MATCH_TYPES",
+            "WWE_PROMOTIONS"
+        ],
+        "Domain": "Sports & Entertainment",
+        "Complexity": "Advanced"
+    },
+    {
+        "Query ID": "058",
+        "Natural Language Query": "Which wrestlers are likely to participate in more matches based on their past performance across different event types?",
+        "Category": "Predictive",
+        "Table(s) Used": [
+            "WWE_MATCHES",
+            "WWE_WRESTLERS",
+            "WWE_EVENTS",
+            "WWE_CARDS"
+        ],
+        "Domain": "Sports & Entertainment",
+        "Complexity": "Advanced"
+    },
+    {
+        "Query ID": "059",
+        "Natural Language Query": "What factors best predict the likelihood of a title change in a match, considering match type, promotion, and location?",
+        "Category": "Predictive",
+        "Table(s) Used": [
+            "WWE_MATCHES",
+            "WWE_MATCH_TYPES",
+            "WWE_PROMOTIONS",
+            "WWE_LOCATIONS",
+            "WWE_CARDS"
+        ],
+        "Domain": "Sports & Entertainment",
+        "Complexity": "Advanced"
+    }
+]

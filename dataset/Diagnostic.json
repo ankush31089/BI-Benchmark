@@ -1,0 +1,673 @@
+[
+    {
+        "Query ID": "001",
+        "Natural Language Query": "What factors contribute to flight delays across different aircraft models?",
+        "Category": "Diagnostic",
+        "Table(s) Used": [
+            "AIRLINES_AIRCRAFTS_DATA",
+            "AIRLINES_FLIGHTS",
+            "AIRLINES_AIRPORTS_DATA"
+        ],
+        "Domain": "Transportation",
+        "Complexity": "Advanced"
+    },
+    {
+        "Query ID": "002",
+        "Natural Language Query": "Can we identify any correlations between the status of flights (e.g., delayed, cancelled) and specific aircraft models or airports?",
+        "Category": "Diagnostic",
+        "Table(s) Used": [
+            "AIRLINES_FLIGHTS",
+            "AIRLINES_AIRCRAFTS_DATA",
+            "AIRLINES_AIRPORTS_DATA"
+        ],
+        "Domain": "Transportation",
+        "Complexity": "Advanced"
+    },
+    {
+        "Query ID": "003",
+        "Natural Language Query": "What are the correlations between the use of safety equipment, such as seatbelts, and the severity of injuries sustained in accidents?",
+        "Category": "Diagnostic",
+        "Table(s) Used": [
+            "CALIFORNIA_TRAFFIC_COLLISION_PARTIES",
+            "CALIFORNIA_TRAFFIC_COLLISION_VICTIMS"
+        ],
+        "Domain": "Transportation",
+        "Complexity": "Intermediate"
+    },
+    {
+        "Query ID": "004",
+        "Natural Language Query": "What factors contribute to the variation in delivery distances across different channels?",
+        "Category": "Diagnostic",
+        "Table(s) Used": [
+            "DELIVERY_CENTER_CHANNELS",
+            "DELIVERY_CENTER_DELIVERIES",
+            "DELIVERY_CENTER_ORDERS"
+        ],
+        "Domain": "Logistics & Retail",
+        "Complexity": "Advanced"
+    },
+    {
+        "Query ID": "005",
+        "Natural Language Query": "Can we identify any correlations between store plan price and order metric production time by store segment?",
+        "Category": "Diagnostic",
+        "Table(s) Used": [
+            "DELIVERY_CENTER_ORDERS",
+            "DELIVERY_CENTER_STORES"
+        ],
+        "Domain": "Logistics & Retail",
+        "Complexity": "Intermediate"
+    },
+    {
+        "Query ID": "006",
+        "Natural Language Query": "What are the key factors driving the variation in CVSS3 scores across different advisory sources, and how do these sources impact overall severity levels?",
+        "Category": "Diagnostic",
+        "Table(s) Used": [
+            "DEPS_DEV_V1_ADVISORIES"
+        ],
+        "Domain": "Software & IT",
+        "Complexity": "Basic"
+    },
+    {
+        "Query ID": "007",
+        "Natural Language Query": "What factors contribute to the variation in transaction counts across different blocks?",
+        "Category": "Diagnostic",
+        "Table(s) Used": [
+            "ETHEREUM_BLOCKCHAIN_BLOCKS",
+            "ETHEREUM_BLOCKCHAIN_TRANSACTIONS"
+        ],
+        "Domain": "Finance",
+        "Complexity": "Intermediate"
+    },
+    {
+        "Query ID": "008",
+        "Natural Language Query": "What are the key factors that influence the status of transactions, and how do these factors interact with each other?",
+        "Category": "Diagnostic",
+        "Table(s) Used": [
+            "ETHEREUM_BLOCKCHAIN_TRANSACTIONS",
+            "ETHEREUM_BLOCKCHAIN_TRACES",
+            "ETHEREUM_BLOCKCHAIN_BLOCKS"
+        ],
+        "Domain": "Finance",
+        "Complexity": "Advanced"
+    },
+    {
+        "Query ID": "009",
+        "Natural Language Query": "How do different constructors perform in terms of average points per race across various seasons?",
+        "Category": "Diagnostic",
+        "Table(s) Used": [
+            "F1_CONSTRUCTOR_STANDINGS",
+            "F1_RACES",
+            "F1_CONSTRUCTORS"
+        ],
+        "Domain": "Sports & Entertainment",
+        "Complexity": "Advanced"
+    },
+    {
+        "Query ID": "010",
+        "Natural Language Query": "How does the distribution of licenses vary among repositories with different primary programming languages?",
+        "Category": "Diagnostic",
+        "Table(s) Used": [
+            "GITHUB_REPOS_LANGUAGES",
+            "GITHUB_REPOS_LICENSES"
+        ],
+        "Domain": "Software & IT",
+        "Complexity": "Intermediate"
+    },
+    {
+        "Query ID": "011",
+        "Natural Language Query": "What are the most common file modes associated with repositories that have a large number of watchers?",
+        "Category": "Diagnostic",
+        "Table(s) Used": [
+            "GITHUB_REPOS_SAMPLE_FILES",
+            "GITHUB_REPOS_SAMPLE_REPOS"
+        ],
+        "Domain": "Software & IT",
+        "Complexity": "Intermediate"
+    },
+    {
+        "Query ID": "012",
+        "Natural Language Query": "What factors contribute to the presence of non-paternity across different populations?",
+        "Category": "Diagnostic",
+        "Table(s) Used": [
+            "HUMAN_GENOME_VARIANTS__1000_GENOMES_PEDIGREE",
+            "HUMAN_GENOME_VARIANTS__1000_GENOMES_SAMPLE_INFO"
+        ],
+        "Domain": "Healthcare",
+        "Complexity": "Intermediate"
+    },
+    {
+        "Query ID": "013",
+        "Natural Language Query": "In which populations do we observe the highest rates of non-paternity, and how does this compare to the overall population distribution?",
+        "Category": "Diagnostic",
+        "Table(s) Used": [
+            "HUMAN_GENOME_VARIANTS__1000_GENOMES_PEDIGREE",
+            "HUMAN_GENOME_VARIANTS__1000_GENOMES_SAMPLE_INFO"
+        ],
+        "Domain": "Healthcare",
+        "Complexity": "Intermediate"
+    },
+    {
+        "Query ID": "014",
+        "Natural Language Query": "What factors contribute to higher sale dollars across different store locations?",
+        "Category": "Diagnostic",
+        "Table(s) Used": [
+            "IOWA_LIQUOR_SALES_SALES"
+        ],
+        "Domain": "Logistics & Retail",
+        "Complexity": "Basic"
+    },
+    {
+        "Query ID": "015",
+        "Natural Language Query": "How do sales dollars vary by county, and which counties have the highest sales?",
+        "Category": "Diagnostic",
+        "Table(s) Used": [
+            "IOWA_LIQUOR_SALES_SALES"
+        ],
+        "Domain": "Logistics & Retail",
+        "Complexity": "Basic"
+    },
+    {
+        "Query ID": "016",
+        "Natural Language Query": "How do the runs scored by a team vary based on the venue of the match?",
+        "Category": "Diagnostic",
+        "Table(s) Used": [
+            "IPL_BATSMAN_SCORED",
+            "IPL_MATCH",
+            "IPL_EXTRA_RUNS",
+            "IPL_BALL_BY_BALL",
+            "IPL_TEAM"
+        ],
+        "Domain": "Sports & Entertainment",
+        "Complexity": "Advanced"
+    },
+    {
+        "Query ID": "017",
+        "Natural Language Query": "What factors influence the choice of licensing commitment among patent owners?",
+        "Category": "Diagnostic",
+        "Table(s) Used": [
+            "PATENTS_GOOGLE_DISCLOSURES_13"
+        ],
+        "Domain": "Legal and Technology",
+        "Complexity": "Basic"
+    },
+    {
+        "Query ID": "018",
+        "Natural Language Query": "How do different committee projects impact the type of licensing commitment chosen by patent owners?",
+        "Category": "Diagnostic",
+        "Table(s) Used": [
+            "PATENTS_GOOGLE_DISCLOSURES_13"
+        ],
+        "Domain": "Legal and Technology",
+        "Complexity": "Basic"
+    },
+    {
+        "Query ID": "019",
+        "Natural Language Query": "What are the key factors that contribute to patent owners choosing 'FREE' licensing commitments, and how do these factors vary by patent owner type?",
+        "Category": "Diagnostic",
+        "Table(s) Used": [
+            "PATENTS_GOOGLE_DISCLOSURES_13"
+        ],
+        "Domain": "Legal and Technology",
+        "Complexity": "Basic"
+    },
+    {
+        "Query ID": "020",
+        "Natural Language Query": "What factors contribute to higher model scores across different versions?",
+        "Category": "Diagnostic",
+        "Table(s) Used": [
+            "STACKING_MODEL_SCORE",
+            "STACKING_MODEL",
+            "STACKING_SOLUTION"
+        ],
+        "Domain": "Software & IT",
+        "Complexity": "Advanced"
+    },
+    {
+        "Query ID": "021",
+        "Natural Language Query": "What are the key factors that contribute to the variation in model importance across different steps and versions?",
+        "Category": "Diagnostic",
+        "Table(s) Used": [
+            "STACKING_MODEL_IMPORTANCE",
+            "STACKING_MODEL"
+        ],
+        "Domain": "Software & IT",
+        "Complexity": "Intermediate"
+    },
+    {
+        "Query ID": "022",
+        "Natural Language Query": "How does the protein expression vary across different gene names and protein base names for the same project?",
+        "Category": "Diagnostic",
+        "Table(s) Used": [
+            "TCGA_HG19_DATA_V0_PROTEIN_EXPRESSION"
+        ],
+        "Domain": "Healthcare",
+        "Complexity": "Basic"
+    },
+    {
+        "Query ID": "023",
+        "Natural Language Query": "How do different traffic sources impact the conversion rate of users from various age groups?",
+        "Category": "Diagnostic",
+        "Table(s) Used": [
+            "THELOOK_ECOMMERCE_EVENTS",
+            "THELOOK_ECOMMERCE_USERS",
+            "THELOOK_ECOMMERCE_ORDERS"
+        ],
+        "Domain": "E-commerce",
+        "Complexity": "Advanced"
+    },
+    {
+        "Query ID": "024",
+        "Natural Language Query": "What are the key factors influencing the time taken for orders to be shipped and delivered, and how do these factors vary by region and product category?",
+        "Category": "Diagnostic",
+        "Table(s) Used": [
+            "THELOOK_ECOMMERCE_ORDERS",
+            "THELOOK_ECOMMERCE_ORDER_ITEMS",
+            "THELOOK_ECOMMERCE_PRODUCTS",
+            "THELOOK_ECOMMERCE_DISTRIBUTION_CENTERS",
+            "THELOOK_ECOMMERCE_USERS"
+        ],
+        "Domain": "E-commerce",
+        "Complexity": "Advanced"
+    },
+    {
+        "Query ID": "025",
+        "Natural Language Query": "How do different promotions compare in terms of the number of title changes per event?",
+        "Category": "Diagnostic",
+        "Table(s) Used": [
+            "WWE_MATCHES",
+            "WWE_CARDS",
+            "WWE_PROMOTIONS"
+        ],
+        "Domain": "Sports & Entertainment",
+        "Complexity": "Advanced"
+    },
+    {
+        "Query ID": "026",
+        "Natural Language Query": "In which cities do we observe the highest number of flight departures, and what aircraft models are most commonly used in these cities?",
+        "Category": "Diagnostic",
+        "Table(s) Used": [
+            "AIRLINES_AIRPORTS_DATA",
+            "AIRLINES_FLIGHTS",
+            "AIRLINES_AIRCRAFTS_DATA"
+        ],
+        "Domain": "Transportation",
+        "Complexity": "Advanced"
+    },
+    {
+        "Query ID": "027",
+        "Natural Language Query": "In which regions do we see the most significant fluctuations in weekly sales, and what might be causing these fluctuations?",
+        "Category": "Diagnostic",
+        "Table(s) Used": [
+            "BANK_SALES_TRADING_CLEANED_WEEKLY_SALES",
+            "BANK_SALES_TRADING_CUSTOMER_REGIONS"
+        ],
+        "Domain": "Finance",
+        "Complexity": "Intermediate"
+    },
+    {
+        "Query ID": "028",
+        "Natural Language Query": "Can we identify any correlations between product attributes, such as weight or dimensions, and customer satisfaction as measured by review scores?",
+        "Category": "Diagnostic",
+        "Table(s) Used": [
+            "BRAZILIAN_E_COMMERCE_OLIST_ORDER_REVIEWS",
+            "BRAZILIAN_E_COMMERCE_OLIST_ORDER_ITEMS",
+            "BRAZILIAN_E_COMMERCE_OLIST_PRODUCTS"
+        ],
+        "Domain": "E-commerce",
+        "Complexity": "Advanced"
+    },
+    {
+        "Query ID": "029",
+        "Natural Language Query": "How do the demographics of drivers, such as age and sex, influence the likelihood of being involved in a collision?",
+        "Category": "Diagnostic",
+        "Table(s) Used": [
+            "CALIFORNIA_TRAFFIC_COLLISION_PARTIES",
+            "CALIFORNIA_TRAFFIC_COLLISION_COLLISIONS"
+        ],
+        "Domain": "Transportation",
+        "Complexity": "Intermediate"
+    },
+    {
+        "Query ID": "030",
+        "Natural Language Query": "How does the distribution of order creation hours impact delivery times across different driver types?",
+        "Category": "Diagnostic",
+        "Table(s) Used": [
+            "DELIVERY_CENTER_ORDERS",
+            "DELIVERY_CENTER_DRIVERS",
+            "DELIVERY_CENTER_DELIVERIES"
+        ],
+        "Domain": "Logistics & Retail",
+        "Complexity": "Advanced"
+    },
+    {
+        "Query ID": "031",
+        "Natural Language Query": "What are the underlying factors contributing to variations in order cycle time across different hub states?",
+        "Category": "Diagnostic",
+        "Table(s) Used": [
+            "DELIVERY_CENTER_ORDERS",
+            "DELIVERY_CENTER_HUBS",
+            "DELIVERY_CENTER_STORES"
+        ],
+        "Domain": "Logistics & Retail",
+        "Complexity": "Advanced"
+    },
+    {
+        "Query ID": "032",
+        "Natural Language Query": "What is the relationship between the number of transactions and the gas limit set for each block?",
+        "Category": "Diagnostic",
+        "Table(s) Used": [
+            "ETHEREUM_BLOCKCHAIN_BLOCKS",
+            "ETHEREUM_BLOCKCHAIN_TRANSACTIONS"
+        ],
+        "Domain": "Finance",
+        "Complexity": "Intermediate"
+    },
+    {
+        "Query ID": "033",
+        "Natural Language Query": "How does the number of goals scored by the home team affect the outcome of a match?",
+        "Category": "Diagnostic",
+        "Table(s) Used": [
+            "EU_SOCCER_MATCH"
+        ],
+        "Domain": "Sports & Entertainment",
+        "Complexity": "Basic"
+    },
+    {
+        "Query ID": "034",
+        "Natural Language Query": "How does the number of pit stops influence the final position of drivers in a race?",
+        "Category": "Diagnostic",
+        "Table(s) Used": [
+            "F1_PIT_STOPS",
+            "F1_RESULTS"
+        ],
+        "Domain": "Sports & Entertainment",
+        "Complexity": "Intermediate"
+    },
+    {
+        "Query ID": "035",
+        "Natural Language Query": "Can we identify any correlations between a team's performance in qualifying and their performance in the actual race, and do these correlations vary by circuit or season?",
+        "Category": "Diagnostic",
+        "Table(s) Used": [
+            "F1_QUALIFYING",
+            "F1_RESULTS",
+            "F1_RACES"
+        ],
+        "Domain": "Sports & Entertainment",
+        "Complexity": "Advanced"
+    },
+    {
+        "Query ID": "036",
+        "Natural Language Query": "How do the sample file paths differ between repositories licensed under open-source versus proprietary licenses?",
+        "Category": "Diagnostic",
+        "Table(s) Used": [
+            "GITHUB_REPOS_LICENSES",
+            "GITHUB_REPOS_SAMPLE_FILES"
+        ],
+        "Domain": "Software & IT",
+        "Complexity": "Intermediate"
+    },
+    {
+        "Query ID": "037",
+        "Natural Language Query": "Are there any correlations between the number of sample files in a repository and its watch count?",
+        "Category": "Diagnostic",
+        "Table(s) Used": [
+            "GITHUB_REPOS_SAMPLE_FILES",
+            "GITHUB_REPOS_SAMPLE_REPOS"
+        ],
+        "Domain": "Software & IT",
+        "Complexity": "Intermediate"
+    },
+    {
+        "Query ID": "038",
+        "Natural Language Query": "Do advertisers with verified status have lower rates of ad disapproval compared to unverified ones?",
+        "Category": "Diagnostic",
+        "Table(s) Used": [
+            "GOOGLE_ADS_TRANSPARENCY_CENTER_CREATIVE_STATS",
+            "GOOGLE_ADS_TRANSPARENCY_CENTER_REMOVED_CREATIVE_STATS"
+        ],
+        "Domain": "Marketing",
+        "Complexity": "Intermediate"
+    },
+    {
+        "Query ID": "039",
+        "Natural Language Query": "How does the frequency of half-siblings and avuncular relationships differ across the various populations represented in the dataset?",
+        "Category": "Diagnostic",
+        "Table(s) Used": [
+            "HUMAN_GENOME_VARIANTS__1000_GENOMES_SAMPLE_INFO"
+        ],
+        "Domain": "Healthcare",
+        "Complexity": "Basic"
+    },
+    {
+        "Query ID": "040",
+        "Natural Language Query": "What are the differences in qualitative measurements of nodules between lung and prostate cancer cases?",
+        "Category": "Diagnostic",
+        "Table(s) Used": [
+            "IDC_V17_QUALITATIVE_MEASUREMENTS",
+            "IDC_V17_MEASUREMENT_GROUPS",
+            "IDC_V17_DICOM_PIVOT"
+        ],
+        "Domain": "Marketing",
+        "Complexity": "Advanced"
+    },
+    {
+        "Query ID": "041",
+        "Natural Language Query": "How does the category of items influence the volume sold in liters?",
+        "Category": "Diagnostic",
+        "Table(s) Used": [
+            "IOWA_LIQUOR_SALES_SALES"
+        ],
+        "Domain": "Logistics & Retail",
+        "Complexity": "Basic"
+    },
+    {
+        "Query ID": "042",
+        "Natural Language Query": "What is the relationship between the pack size of items and the bottles sold, segmented by category?",
+        "Category": "Diagnostic",
+        "Table(s) Used": [
+            "IOWA_LIQUOR_SALES_SALES"
+        ],
+        "Domain": "Logistics & Retail",
+        "Complexity": "Basic"
+    },
+    {
+        "Query ID": "043",
+        "Natural Language Query": "How do customer purchasing behaviors, as indicated by sales dollars and volume sold, correlate with the state bottle cost and retail price, and what insights can be gleaned from this correlation?",
+        "Category": "Diagnostic",
+        "Table(s) Used": [
+            "IOWA_LIQUOR_SALES_SALES"
+        ],
+        "Domain": "Logistics & Retail",
+        "Complexity": "Basic"
+    },
+    {
+        "Query ID": "044",
+        "Natural Language Query": "How did different batting positions influence the number of runs scored in each innings?",
+        "Category": "Diagnostic",
+        "Table(s) Used": [
+            "IPL_BALL_BY_BALL",
+            "IPL_BATSMAN_SCORED"
+        ],
+        "Domain": "Sports & Entertainment",
+        "Complexity": "Intermediate"
+    },
+    {
+        "Query ID": "045",
+        "Natural Language Query": "What is the relationship between the number of extras conceded and the win margin in matches where the team batting first wins?",
+        "Category": "Diagnostic",
+        "Table(s) Used": [
+            "IPL_MATCH",
+            "IPL_EXTRA_RUNS"
+        ],
+        "Domain": "Sports & Entertainment",
+        "Complexity": "Intermediate"
+    },
+    {
+        "Query ID": "046",
+        "Natural Language Query": "Which user actions are most commonly associated with purchases in the drama category?",
+        "Category": "Diagnostic",
+        "Table(s) Used": [
+            "LOG_ACTION_LOG",
+            "LOG_MST_CATEGORIES"
+        ],
+        "Domain": "Software & IT",
+        "Complexity": "Intermediate"
+    },
+    {
+        "Query ID": "047",
+        "Natural Language Query": "What is the relationship between employee hiring periods and their job titles?",
+        "Category": "Diagnostic",
+        "Table(s) Used": [
+            "ORACLE_SQL_EMPLOYEES",
+            "ORACLE_SQL_EMP_HIRE_PERIODS"
+        ],
+        "Domain": "Databases",
+        "Complexity": "Intermediate"
+    },
+    {
+        "Query ID": "048",
+        "Natural Language Query": "How does the average rental duration differ across film categories?",
+        "Category": "Diagnostic",
+        "Table(s) Used": [
+            "PAGILA_FILM",
+            "PAGILA_FILM_CATEGORY",
+            "PAGILA_CATEGORY"
+        ],
+        "Domain": "Sports & Entertainment",
+        "Complexity": "Advanced"
+    },
+    {
+        "Query ID": "049",
+        "Natural Language Query": "How does the distribution of patent owners vary across different disclosure events?",
+        "Category": "Diagnostic",
+        "Table(s) Used": [
+            "PATENTS_GOOGLE_DISCLOSURES_13"
+        ],
+        "Domain": "Legal and Technology",
+        "Complexity": "Basic"
+    },
+    {
+        "Query ID": "050",
+        "Natural Language Query": "In which technical committees do patent owners most frequently choose FRAND licensing commitments?",
+        "Category": "Diagnostic",
+        "Table(s) Used": [
+            "PATENTS_GOOGLE_DISCLOSURES_13"
+        ],
+        "Domain": "Legal and Technology",
+        "Complexity": "Basic"
+    },
+    {
+        "Query ID": "051",
+        "Natural Language Query": "How does the presence of third-party involvement affect the choice of licensing commitment, and does this relationship differ based on the type of patent owner?",
+        "Category": "Diagnostic",
+        "Table(s) Used": [
+            "PATENTS_GOOGLE_DISCLOSURES_13"
+        ],
+        "Domain": "Legal and Technology",
+        "Complexity": "Basic"
+    },
+    {
+        "Query ID": "052",
+        "Natural Language Query": "How does the average rental duration differ across film categories?",
+        "Category": "Diagnostic",
+        "Table(s) Used": [
+            "SQLITE_SAKILA_FILM",
+            "SQLITE_SAKILA_FILM_CATEGORY",
+            "SQLITE_SAKILA_CATEGORY"
+        ],
+        "Domain": "Sports & Entertainment",
+        "Complexity": "Advanced"
+    },
+    {
+        "Query ID": "053",
+        "Natural Language Query": "How does the importance of features vary by step in the model development process?",
+        "Category": "Diagnostic",
+        "Table(s) Used": [
+            "STACKING_FEATURE_IMPORTANCE"
+        ],
+        "Domain": "Software & IT",
+        "Complexity": "Basic"
+    },
+    {
+        "Query ID": "054",
+        "Natural Language Query": "In which steps of the model development process do feature importances tend to be highest?",
+        "Category": "Diagnostic",
+        "Table(s) Used": [
+            "STACKING_FEATURE_IMPORTANCE"
+        ],
+        "Domain": "Software & IT",
+        "Complexity": "Basic"
+    },
+    {
+        "Query ID": "055",
+        "Natural Language Query": "What is the distribution of somatic mutations across different chromosomes and their impact on the Hugo Symbol?",
+        "Category": "Diagnostic",
+        "Table(s) Used": [
+            "TCGA_HG19_DATA_V0_SOMATIC_MUTATION_DCC",
+            "TCGA_HG19_DATA_V0_SOMATIC_MUTATION_MC3"
+        ],
+        "Domain": "Healthcare",
+        "Complexity": "Intermediate"
+    },
+    {
+        "Query ID": "056",
+        "Natural Language Query": "How do the different types of somatic mutations (e.g., SNP, DEL, INS) affect the protein change and their corresponding impact on the gene function?",
+        "Category": "Diagnostic",
+        "Table(s) Used": [
+            "TCGA_HG19_DATA_V0_SOMATIC_MUTATION_DCC",
+            "TCGA_HG19_DATA_V0_SOMATIC_MUTATION_MC3"
+        ],
+        "Domain": "Healthcare",
+        "Complexity": "Intermediate"
+    },
+    {
+        "Query ID": "057",
+        "Natural Language Query": "How does the distribution of products across different departments influence sales?",
+        "Category": "Diagnostic",
+        "Table(s) Used": [
+            "THELOOK_ECOMMERCE_INVENTORY_ITEMS",
+            "THELOOK_ECOMMERCE_PRODUCTS",
+            "THELOOK_ECOMMERCE_ORDER_ITEMS",
+            "THELOOK_ECOMMERCE_ORDERS"
+        ],
+        "Domain": "E-commerce",
+        "Complexity": "Advanced"
+    },
+    {
+        "Query ID": "058",
+        "Natural Language Query": "Can we identify any correlations between customer demographics, such as age and gender, and their purchasing behavior, including the types of products they buy and the frequency of their purchases?",
+        "Category": "Diagnostic",
+        "Table(s) Used": [
+            "THELOOK_ECOMMERCE_USERS",
+            "THELOOK_ECOMMERCE_ORDERS",
+            "THELOOK_ECOMMERCE_ORDER_ITEMS",
+            "THELOOK_ECOMMERCE_PRODUCTS"
+        ],
+        "Domain": "E-commerce",
+        "Complexity": "Advanced"
+    },
+    {
+        "Query ID": "059",
+        "Natural Language Query": "How do different match types influence the duration of wrestling matches?",
+        "Category": "Diagnostic",
+        "Table(s) Used": [
+            "WWE_MATCHES",
+            "WWE_MATCH_TYPES"
+        ],
+        "Domain": "Sports & Entertainment",
+        "Complexity": "Intermediate"
+    },
+    {
+        "Query ID": "060",
+        "Natural Language Query": "In which regions do we see the highest concentration of specific match types, and why?",
+        "Category": "Diagnostic",
+        "Table(s) Used": [
+            "WWE_MATCHES",
+            "WWE_MATCH_TYPES",
+            "WWE_CARDS",
+            "WWE_LOCATIONS"
+        ],
+        "Domain": "Sports & Entertainment",
+        "Complexity": "Advanced"
+    }
+]

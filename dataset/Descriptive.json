@@ -1,0 +1,1287 @@
+[
+    {
+        "Query ID": "001",
+        "Natural Language Query": "Among all cities with delivered orders, find the five cities whose summed payments are the lowest, then calculate the average of their total payments and the average of their total delivered order counts.",
+        "Category": "Descriptive",
+        "Table(s) Used": [
+            "BRAZILIAN_E_COMMERCE_OLIST_CUSTOMERS",
+            "BRAZILIAN_E_COMMERCE_OLIST_ORDERS",
+            "BRAZILIAN_E_COMMERCE_OLIST_ORDER_PAYMENTS"
+        ],
+        "Domain": "E-commerce",
+        "Complexity": "Intermediate"
+    },
+    {
+        "Query ID": "002",
+        "Natural Language Query": "Could you generate a report that shows the number of delivered orders for each month in the years 2016, 2017, and 2018? Each column represents a year, and each row represents a month",
+        "Category": "Descriptive",
+        "Table(s) Used": [
+            "BRAZILIAN_E_COMMERCE_OLIST_ORDERS"
+        ],
+        "Domain": "E-commerce",
+        "Complexity": "Basic"
+    },
+    {
+        "Query ID": "003",
+        "Natural Language Query": "Please calculate, separately for motorcycle collisions involving riders who were wearing helmets and those who were not wearing helmets, the percentage of motorcyclist fatalities per collision. For each group, compute this by dividing the total number of motorcyclist fatalities by the total number of collisions involving that group.",
+        "Category": "Descriptive",
+        "Table(s) Used": [
+            "CALIFORNIA_TRAFFIC_COLLISION_COLLISIONS",
+            "CALIFORNIA_TRAFFIC_COLLISION_PARTIES"
+        ],
+        "Domain": "Transportation",
+        "Complexity": "Intermediate"
+    },
+    {
+        "Query ID": "004",
+        "Natural Language Query": "Please help me identify the top 3 bowlers who, in the overs where the maximum runs were conceded in each match, gave up the highest number of runs in a single over across all matches. For each of these bowlers, provide the match in which they conceded these maximum runs. Only consider overs that had the most runs conceded within their respective matches, and among these, determine which bowlers conceded the most runs in a single over overall.",
+        "Category": "Descriptive",
+        "Table(s) Used": [
+            "IPL_BALL_BY_BALL",
+            "IPL_BATSMAN_SCORED",
+            "IPL_EXTRA_RUNS",
+            "IPL_PLAYER"
+        ],
+        "Domain": "Sports & Entertainment",
+        "Complexity": "Advanced"
+    },
+    {
+        "Query ID": "005",
+        "Natural Language Query": "Identify the sessions with the minimal number of events occurring before the first '/detail' click or '/complete' conversion within the session, considering only events with non-empty search types. If multiple sessions share this minimum count, include all of them. For each session, display the associated paths and search types.",
+        "Category": "Descriptive",
+        "Table(s) Used": [
+            "LOG_ACTIVITY_LOG"
+        ],
+        "Domain": "Software & IT",
+        "Complexity": "Basic"
+    },
+    {
+        "Query ID": "006",
+        "Natural Language Query": "Using the \"bitcoin_prices\" table, please calculate the daily percentage change in trading volume for each ticker from August 1 to August 10, 2021, ensuring that any volume ending in \"K\" or \"M\" is accurately converted to thousands or millions, any \"-\" volume is treated as zero, only non-zero volumes are used to determine the previous day's volume, and the results are ordered by ticker and date.",
+        "Category": "Descriptive",
+        "Table(s) Used": [
+            "BANK_SALES_TRADING_BITCOIN_PRICES"
+        ],
+        "Domain": "Finance",
+        "Complexity": "Basic"
+    },
+    {
+        "Query ID": "007",
+        "Natural Language Query": "For each customer, calculate their daily balances for every day between their earliest and latest transaction dates, including days without transactions by carrying forward the previous day's balance. Treat any negative daily balances as zero. Then, for each month, determine the highest daily balance each customer had during that month. Finally, for each month, sum these maximum daily balances across all customers to obtain a monthly total.",
+        "Category": "Descriptive",
+        "Table(s) Used": [
+            "BANK_SALES_TRADING_CUSTOMER_TRANSACTIONS"
+        ],
+        "Domain": "Finance",
+        "Complexity": "Basic"
+    },
+    {
+        "Query ID": "008",
+        "Natural Language Query": "Could you calculate each user\u2019s average balance over the past 30 days, computed daily? Then, for each month (based on the 1st of each month), find the highest of these daily averages for each user. Add up these maximum values across all users for each month as the final result. Please use the first month as a baseline for previous balances and exclude it from the output.",
+        "Category": "Descriptive",
+        "Table(s) Used": [
+            "BANK_SALES_TRADING_CUSTOMER_TRANSACTIONS"
+        ],
+        "Domain": "Finance",
+        "Complexity": "Basic"
+    },
+    {
+        "Query ID": "009",
+        "Natural Language Query": "Please provide, for each age from 12 through 18 (inclusive), the total number of deaths and the number of deaths among individuals identified as Black (based on race descriptions containing the word \u2018black\u2019), specifically for deaths associated with ICD-10 codes whose descriptions include the word \u2018vehicle\u2019 and for deaths associated with ICD-10 codes whose descriptions include the word \u2018firearm.\u2019 Use the EntityAxisConditions table to determine which ICD-10 codes were involved in each death, rather than joining ICD-10 code information directly on the death records.",
+        "Category": "Descriptive",
+        "Table(s) Used": [
+            "DEATH_DEATHRECORDS",
+            "DEATH_ENTITYAXISCONDITIONS",
+            "DEATH_ICD10CODE",
+            "DEATH_RACE"
+        ],
+        "Domain": "Healthcare",
+        "Complexity": "Advanced"
+    },
+    {
+        "Query ID": "010",
+        "Natural Language Query": "In the dataset of orders joined with store information, which store has the highest total number of orders, and among that store\u2019s orders, what is the ratio of orders that appear in the deliveries table with a 'DELIVERED' status to the total orders for that store?",
+        "Category": "Descriptive",
+        "Table(s) Used": [
+            "DELIVERY_CENTER_DELIVERIES",
+            "DELIVERY_CENTER_ORDERS",
+            "DELIVERY_CENTER_STORES"
+        ],
+        "Domain": "Logistics & Retail",
+        "Complexity": "Intermediate"
+    },
+    {
+        "Query ID": "011",
+        "Natural Language Query": "Can you identify the hubs that saw more than a 20% increase in finished orders from February to March?",
+        "Category": "Descriptive",
+        "Table(s) Used": [
+            "DELIVERY_CENTER_HUBS",
+            "DELIVERY_CENTER_ORDERS",
+            "DELIVERY_CENTER_STORES"
+        ],
+        "Domain": "Logistics & Retail",
+        "Complexity": "Intermediate"
+    },
+    {
+        "Query ID": "012",
+        "Natural Language Query": "Which customer has the highest average monthly change in payment amounts? Provide the customer's full name.",
+        "Category": "Descriptive",
+        "Table(s) Used": [
+            "SQLITE_SAKILA_CUSTOMER",
+            "SQLITE_SAKILA_PAYMENT"
+        ],
+        "Domain": "Sports & Entertainment",
+        "Complexity": "Intermediate"
+    },
+    {
+        "Query ID": "013",
+        "Natural Language Query": "Calculate the average balance (in quadrillions, 10^15) of the top 10 Ethereum addresses by net balance, including incoming and outgoing transfers from traces (only successful transactions and excluding call types like delegatecall, callcode, and staticcall), miner rewards (sum of gas fees per block), and sender gas fee deductions. Exclude null addresses and round the result to two decimal places.",
+        "Category": "Descriptive",
+        "Table(s) Used": [
+            "ETHEREUM_BLOCKCHAIN_BLOCKS",
+            "ETHEREUM_BLOCKCHAIN_TRACES",
+            "ETHEREUM_BLOCKCHAIN_TRANSACTIONS"
+        ],
+        "Domain": "Finance",
+        "Complexity": "Intermediate"
+    },
+    {
+        "Query ID": "014",
+        "Natural Language Query": "Among Formula 1 drivers who raced during the 1950s, which drivers completed a season in that decade with the same constructor in both the first and the last race they participated in, while also taking part in at least two distinct race rounds during that season?",
+        "Category": "Descriptive",
+        "Table(s) Used": [
+            "F1_RACES",
+            "F1_RESULTS"
+        ],
+        "Domain": "Sports & Entertainment",
+        "Complexity": "Intermediate"
+    },
+    {
+        "Query ID": "015",
+        "Natural Language Query": "Could you tell me the number of orders, average payment per order and customer lifespan in weeks of the 3 custumers with the highest average payment per order, where the lifespan is calculated by subtracting the earliest purchase date from the latest purchase date in days, dividing by seven, and if the result is less than seven days, setting it to 1.0?",
+        "Category": "Descriptive",
+        "Table(s) Used": [
+            "E_COMMERCE_CUSTOMERS",
+            "E_COMMERCE_ORDERS",
+            "E_COMMERCE_ORDER_PAYMENTS"
+        ],
+        "Domain": "E-commerce",
+        "Complexity": "Intermediate"
+    },
+    {
+        "Query ID": "016",
+        "Natural Language Query": "Please create a month-by-month report for the year 2023 that focuses on the 'Sleep & Lounge' category, showing for each month the total sales, total cost, number of complete orders, total profit, and the profit-to-cost ratio, ensuring that the order is marked as 'Complete,' the creation date is between January 1, 2023, and December 31, 2023, and the cost data is accurately associated with the corresponding product through the order items.",
+        "Category": "Descriptive",
+        "Table(s) Used": [
+            "THELOOK_ECOMMERCE_ORDERS",
+            "THELOOK_ECOMMERCE_ORDER_ITEMS",
+            "THELOOK_ECOMMERCE_PRODUCTS"
+        ],
+        "Domain": "E-commerce",
+        "Complexity": "Intermediate"
+    },
+    {
+        "Query ID": "017",
+        "Natural Language Query": "For each year, which driver and which constructor scored the most points? I want the full name of each driver.",
+        "Category": "Descriptive",
+        "Table(s) Used": [
+            "F1_CONSTRUCTORS",
+            "F1_DRIVERS",
+            "F1_RACES",
+            "F1_RESULTS"
+        ],
+        "Domain": "Sports & Entertainment",
+        "Complexity": "Advanced"
+    },
+    {
+        "Query ID": "018",
+        "Natural Language Query": "Which constructors had the top 3 combined points from their best driver and team, and in which years did they achieve them?",
+        "Category": "Descriptive",
+        "Table(s) Used": [
+            "F1_CONSTRUCTORS",
+            "F1_DRIVERS",
+            "F1_RACES",
+            "F1_RESULTS"
+        ],
+        "Domain": "Sports & Entertainment",
+        "Complexity": "Advanced"
+    },
+    {
+        "Query ID": "019",
+        "Natural Language Query": "Calculate the average first and last rounds of races missed by drivers each year. Only include drivers who missed fewer than three races annually and who switched teams between the race immediately before their first missed race and the race immediately after their last missed race.",
+        "Category": "Descriptive",
+        "Table(s) Used": [
+            "F1_DRIVER_STANDINGS_EXT",
+            "F1_RACES_EXT",
+            "F1_RESULTS"
+        ],
+        "Domain": "Sports & Entertainment",
+        "Complexity": "Intermediate"
+    },
+    {
+        "Query ID": "020",
+        "Natural Language Query": "How many unique sessions visited the /regist/input page and then the /regist/confirm page, in that order?",
+        "Category": "Descriptive",
+        "Table(s) Used": [
+            "LOG_FORM_LOG"
+        ],
+        "Domain": "Software & IT",
+        "Complexity": "Basic"
+    },
+    {
+        "Query ID": "021",
+        "Natural Language Query": "Using the 2017 GitHub Archive data for watch events, which three repositories that include at least one Python file (with a .py extension) smaller than 15,000 bytes and containing the substring \"def \" in its content have the highest total number of watch events for that year?",
+        "Category": "Descriptive",
+        "Table(s) Used": [
+            "GITHUB_REPOS_SAMPLE_CONTENTS",
+            "GITHUB_REPOS_SAMPLE_FILES",
+            "MONTH__201701",
+            "MONTH__201702",
+            "MONTH__201703",
+            "MONTH__201704",
+            "MONTH__201705",
+            "MONTH__201706",
+            "MONTH__201707",
+            "MONTH__201708",
+            "MONTH__201709",
+            "MONTH__201710",
+            "MONTH__201711",
+            "MONTH__201712"
+        ],
+        "Domain": "Software & IT",
+        "Complexity": "Advanced"
+    },
+    {
+        "Query ID": "022",
+        "Natural Language Query": "How many commit messages are there in repositories that use the 'Shell' programming language and 'apache-2.0' license, where the length of the commit message is more than 5 characters but less than 10,000 characters, and the messages do not start with the word 'merge', 'update' or 'test'?",
+        "Category": "Descriptive",
+        "Table(s) Used": [
+            "GITHUB_REPOS_LANGUAGES",
+            "GITHUB_REPOS_LICENSES",
+            "GITHUB_REPOS_SAMPLE_COMMITS"
+        ],
+        "Domain": "Software & IT",
+        "Complexity": "Intermediate"
+    },
+    {
+        "Query ID": "023",
+        "Natural Language Query": "Among all repositories that do not use any programming language whose name (case-insensitively) includes the substring \"python,\" what is the proportion of files whose paths include \"readme.md\" and whose contents contain the phrase \"Copyright (c)\"?",
+        "Category": "Descriptive",
+        "Table(s) Used": [
+            "GITHUB_REPOS_LANGUAGES",
+            "GITHUB_REPOS_SAMPLE_CONTENTS",
+            "GITHUB_REPOS_SAMPLE_FILES"
+        ],
+        "Domain": "Software & IT",
+        "Complexity": "Intermediate"
+    },
+    {
+        "Query ID": "024",
+        "Natural Language Query": "Considering only the latest release versions of NPM package, which packages are the top 8 most popular based on the Github star number, as well as their versions?",
+        "Category": "Descriptive",
+        "Table(s) Used": [
+            "DEPS_DEV_V1_PACKAGEVERSIONS",
+            "DEPS_DEV_V1_PACKAGEVERSIONTOPROJECT",
+            "DEPS_DEV_V1_PROJECTS"
+        ],
+        "Domain": "Software & IT",
+        "Complexity": "Intermediate"
+    },
+    {
+        "Query ID": "025",
+        "Natural Language Query": "Analyze the soccer match dataset to determine the champion team for each season across all countries and leagues, awarding 3 points for every win, 1 point for every tie, and 0 points for every loss. For each season, return the champion\u2019s team name, the league, the country, and the total points accumulated.",
+        "Category": "Descriptive",
+        "Table(s) Used": [
+            "EU_SOCCER_COUNTRY",
+            "EU_SOCCER_LEAGUE",
+            "EU_SOCCER_MATCH",
+            "EU_SOCCER_TEAM"
+        ],
+        "Domain": "Sports & Entertainment",
+        "Complexity": "Advanced"
+    },
+    {
+        "Query ID": "026",
+        "Natural Language Query": "Identify the top five CT scan series by size (in MiB), including their SeriesInstanceUID, series number, patient ID, and series size. These series must be from the CT modality and not part of the 'nlst' collection. Exclude any series where the ImageType is classified as 'LOCALIZER' or where the TransferSyntaxUID is either '1.2.840.10008.1.2.4.70' or '1.2.840.10008.1.2.4.51' (i.e., JPEG compressed). The selected series must have consistent slice intervals, exposure levels, image orientation (with only one unique ImageOrientationPatient value), pixel spacing, image positions (both z-axis and xy positions), and pixel dimensions (rows and columns). Ensure that the number of images matches the number of unique z-axis positions, indicating no duplicate slices. Additionally, the z-axis component of the cross product of the x and y direction cosines from ImageOrientationPatient must have an absolute value between 0.99 and 1.01, ensuring alignment with the expected imaging plane. Finally, order the results by series size in descending order and limit the output to the top five series satisfying these conditions.",
+        "Category": "Descriptive",
+        "Table(s) Used": [
+            "IDC_V17_DICOM_ALL"
+        ],
+        "Domain": "Marketing",
+        "Complexity": "Basic"
+    },
+    {
+        "Query ID": "027",
+        "Natural Language Query": "How many unique StudyInstanceUIDs are there from the DWI, T2 Weighted Axial, Apparent Diffusion Coefficient series, and T2 Weighted Axial Segmentations in the 'qin_prostate_repeatability' collection?",
+        "Category": "Descriptive",
+        "Table(s) Used": [
+            "IDC_V17_DICOM_ALL"
+        ],
+        "Domain": "Marketing",
+        "Complexity": "Basic"
+    },
+    {
+        "Query ID": "028",
+        "Natural Language Query": "In the dicom_pivot table, how many unique StudyInstanceUID values exactly match the SegmentedPropertyTypeCodeSequence of \"15825003\" (case-insensitive) and also have a collection_id of either \"Community\" or \"nsclc_radiomics\"?",
+        "Category": "Descriptive",
+        "Table(s) Used": [
+            "IDC_V17_DICOM_PIVOT"
+        ],
+        "Domain": "Marketing",
+        "Complexity": "Basic"
+    },
+    {
+        "Query ID": "029",
+        "Natural Language Query": "In the Iowa Liquor Sales dataset, starting from January 1, 2022 through the last fully completed month, which two liquor categories, each contributing an average of at least 1% to the monthly sales volume over at least 24 months of available data, have the lowest Pearson correlation coefficient when comparing their monthly percentages of total liquor sales across those months, and what are their names?",
+        "Category": "Descriptive",
+        "Table(s) Used": [
+            "IOWA_LIQUOR_SALES_SALES"
+        ],
+        "Domain": "Logistics & Retail",
+        "Complexity": "Basic"
+    },
+    {
+        "Query ID": "030",
+        "Natural Language Query": "Retrieve the names of players who scored no less than 100 runs in a match while playing for the team that lost that match.",
+        "Category": "Descriptive",
+        "Table(s) Used": [
+            "IPL_BALL_BY_BALL",
+            "IPL_BATSMAN_SCORED",
+            "IPL_MATCH",
+            "IPL_PLAYER",
+            "IPL_PLAYER_MATCH"
+        ],
+        "Domain": "Sports & Entertainment",
+        "Complexity": "Advanced"
+    },
+    {
+        "Query ID": "031",
+        "Natural Language Query": "For veg whsle data, can you analyze our financial performance over the years 2020 to 2023? I need insights into the average wholesale price, maximum wholesale price, minimum wholesale price, wholesale price difference, total wholesale price, total selling price, average loss rate, total loss, and profit for each category within each year. Round all calculated values to two decimal places.",
+        "Category": "Descriptive",
+        "Table(s) Used": [
+            "BANK_SALES_TRADING_VEG_CAT",
+            "BANK_SALES_TRADING_VEG_LOSS_RATE_DF",
+            "BANK_SALES_TRADING_VEG_TXN_DF",
+            "BANK_SALES_TRADING_VEG_WHSLE_DF"
+        ],
+        "Domain": "Finance",
+        "Complexity": "Advanced"
+    },
+    {
+        "Query ID": "032",
+        "Natural Language Query": "Can you calculate the median from the highest season goals of each team?",
+        "Category": "Descriptive",
+        "Table(s) Used": [
+            "EU_SOCCER_MATCH"
+        ],
+        "Domain": "Sports & Entertainment",
+        "Complexity": "Basic"
+    },
+    {
+        "Query ID": "033",
+        "Natural Language Query": "About the refined human genetic variations collected in phase 3 on 2015-02-20, I want to know the minimum and maximum start positions as well as the proportions of these two respectively for reference bases 'AT' and 'TA'.",
+        "Category": "Descriptive",
+        "Table(s) Used": [
+            "HUMAN_GENOME_VARIANTS__1000_GENOMES_PHASE_3_OPTIMIZED_SCHEMA_VARIANTS_20150220"
+        ],
+        "Domain": "Healthcare",
+        "Complexity": "Basic"
+    },
+    {
+        "Query ID": "034",
+        "Natural Language Query": "Identify the L1_model associated with each model (specified by name and version) that occurs most frequently for each status ('strong' or 'soft'), along with the number of times it occurs. A model has a 'strong' status if, for any of its steps, the maximum test score among non-'Stack' models is less than the 'Stack' model's test score. It has a 'soft' status if the maximum test score among non-'Stack' models equals the 'Stack' model's test score. Count how many times each L1_model is associated with a 'strong' or 'soft' status across all models, and determine which L1_model has the highest occurrence for each status.",
+        "Category": "Descriptive",
+        "Table(s) Used": [
+            "STACKING_MODEL",
+            "STACKING_MODEL_SCORE"
+        ],
+        "Domain": "Software & IT",
+        "Complexity": "Intermediate"
+    },
+    {
+        "Query ID": "035",
+        "Natural Language Query": "For each customer and each month of 2020, first calculate the month-end balance by adding all deposit amounts and subtracting all withdrawal amounts that occurred during that specific month. Then determine which month in 2020 has the highest count of customers with a positive month-end balance and which month has the lowest count. For each of these two months, compute the average month-end balance across all customers and provide the difference between these two averages",
+        "Category": "Descriptive",
+        "Table(s) Used": [
+            "BANK_SALES_TRADING_CUSTOMER_TRANSACTIONS"
+        ],
+        "Domain": "Finance",
+        "Complexity": "Basic"
+    },
+    {
+        "Query ID": "036",
+        "Natural Language Query": "From January 1, 2019, to April 30, 2022, how many users are at the youngest age and how many users are at the oldest age for each gender in the e-commerce platform, counting both youngest and oldest users separately for each gender?",
+        "Category": "Descriptive",
+        "Table(s) Used": [
+            "THELOOK_ECOMMERCE_USERS"
+        ],
+        "Domain": "E-commerce",
+        "Complexity": "Basic"
+    },
+    {
+        "Query ID": "037",
+        "Natural Language Query": "Please generate a report that, for each month in 2021, provides the number of orders, the number of unique purchasers, and the profit (calculated as the sum of product retail prices minus the sum of product costs), where the orders were placed during 2021 by users who registered in 2021 for inventory items created in 2021, and group the results by the users' country, product department, and product category.",
+        "Category": "Descriptive",
+        "Table(s) Used": [
+            "THELOOK_ECOMMERCE_DISTRIBUTION_CENTERS",
+            "THELOOK_ECOMMERCE_INVENTORY_ITEMS",
+            "THELOOK_ECOMMERCE_ORDERS",
+            "THELOOK_ECOMMERCE_ORDER_ITEMS",
+            "THELOOK_ECOMMERCE_USERS"
+        ],
+        "Domain": "E-commerce",
+        "Complexity": "Advanced"
+    },
+    {
+        "Query ID": "038",
+        "Natural Language Query": "Can you list the email addresses of the top 10 users who registered in 2019 and made purchases in 2019, ranking them by their highest average order value, where average order value is calculated by multiplying the number of items in each order by the sale price, summing this total across all orders for each user, and then dividing by the total number of orders?",
+        "Category": "Descriptive",
+        "Table(s) Used": [
+            "THELOOK_ECOMMERCE_ORDERS",
+            "THELOOK_ECOMMERCE_ORDER_ITEMS",
+            "THELOOK_ECOMMERCE_USERS"
+        ],
+        "Domain": "E-commerce",
+        "Complexity": "Intermediate"
+    },
+    {
+        "Query ID": "039",
+        "Natural Language Query": "Can you list the top 5 months from August 2022 to November 2023 where the profit from Facebook-sourced completed orders showed the largest month-over-month increase? Calculate profit as sales minus costs.",
+        "Category": "Descriptive",
+        "Table(s) Used": [
+            "THELOOK_ECOMMERCE_ORDERS",
+            "THELOOK_ECOMMERCE_ORDER_ITEMS",
+            "THELOOK_ECOMMERCE_PRODUCTS",
+            "THELOOK_ECOMMERCE_USERS"
+        ],
+        "Domain": "E-commerce",
+        "Complexity": "Advanced"
+    },
+    {
+        "Query ID": "040",
+        "Natural Language Query": "Extract and count the frequency of all package names listed in the require section of JSON-formatted content",
+        "Category": "Descriptive",
+        "Table(s) Used": [
+            "GITHUB_REPOS_SAMPLE_CONTENTS"
+        ],
+        "Domain": "Software & IT",
+        "Complexity": "Basic"
+    },
+    {
+        "Query ID": "041",
+        "Natural Language Query": "What is the average total quantity across all final packaging combinations, considering only the leaf-level items within each combination after fully expanding any nested packaging relationships?",
+        "Category": "Descriptive",
+        "Table(s) Used": [
+            "ORACLE_SQL_PACKAGING",
+            "ORACLE_SQL_PACKAGING_RELATIONS"
+        ],
+        "Domain": "Databases",
+        "Complexity": "Intermediate"
+    },
+    {
+        "Query ID": "042",
+        "Natural Language Query": "Please help me find the film category with the highest total rental hours in cities where the city's name either starts with \"A\" or contains a hyphen. ",
+        "Category": "Descriptive",
+        "Table(s) Used": [
+            "PAGILA_ADDRESS",
+            "PAGILA_CATEGORY",
+            "PAGILA_CITY",
+            "PAGILA_CUSTOMER",
+            "PAGILA_FILM",
+            "PAGILA_FILM_CATEGORY",
+            "PAGILA_INVENTORY",
+            "PAGILA_RENTAL"
+        ],
+        "Domain": "Sports & Entertainment",
+        "Complexity": "Advanced"
+    },
+    {
+        "Query ID": "043",
+        "Natural Language Query": "Could you help me determine which actor starred most frequently in English-language children's category films that were rated either G or PG, had a running time of 120 minutes or less, and were released between 2000 and 2010? Please provide the actor's full name.",
+        "Category": "Descriptive",
+        "Table(s) Used": [
+            "PAGILA_ACTOR",
+            "PAGILA_CATEGORY",
+            "PAGILA_FILM",
+            "PAGILA_FILM_ACTOR",
+            "PAGILA_FILM_CATEGORY",
+            "PAGILA_LANGUAGE"
+        ],
+        "Domain": "Sports & Entertainment",
+        "Complexity": "Advanced"
+    },
+    {
+        "Query ID": "044",
+        "Natural Language Query": "Calculate, for each histology type specified in the 'icd_o_3_histology' field (excluding those enclosed in square brackets), the average of the per-patient average log10(normalized_count + 1) expression levels of the IGF2 gene among LGG patients with valid IGF2 expression data. Match gene expression and clinical data using the ParticipantBarcode field.",
+        "Category": "Descriptive",
+        "Table(s) Used": [
+            "PANCANCER_ATLAS_FILTERED_CLINICAL_PANCAN_PATIENT_WITH_FOLLOWUP_FILTERED",
+            "PANCANCER_ATLAS_FILTERED_EBPP_ADJUSTPANCAN_ILLUMINAHISEQ_RNASEQV2_GENEXP_FILTERED"
+        ],
+        "Domain": "Healthcare",
+        "Complexity": "Intermediate"
+    },
+    {
+        "Query ID": "045",
+        "Natural Language Query": "Can you provide a breakdown of how many times each product was viewed, how many times they were added to the shopping cart, and how many times they were left in the cart without being purchased? Also, give me the count of actual purchases for each product. Ensure that products with a page id in (1, 2, 12, 13) are filtered out.",
+        "Category": "Descriptive",
+        "Table(s) Used": [
+            "BANK_SALES_TRADING_SHOPPING_CART_EVENTS",
+            "BANK_SALES_TRADING_SHOPPING_CART_PAGE_HIERARCHY"
+        ],
+        "Domain": "Finance",
+        "Complexity": "Intermediate"
+    },
+    {
+        "Query ID": "046",
+        "Natural Language Query": "Based on the most recent refresh date, identify the top-ranked rising search term for the week that is exactly one year prior to the latest available week in the dataset.",
+        "Category": "Descriptive",
+        "Table(s) Used": [
+            "GOOGLE_TRENDS_TOP_RISING_TERMS"
+        ],
+        "Domain": "Marketing",
+        "Complexity": "Basic"
+    },
+    {
+        "Query ID": "047",
+        "Natural Language Query": "List the repository names and commit counts for the top two GitHub repositories with JavaScript as the primary language and the highest number of commits.",
+        "Category": "Descriptive",
+        "Table(s) Used": [
+            "GITHUB_REPOS_LANGUAGES",
+            "GITHUB_REPOS_SAMPLE_COMMITS"
+        ],
+        "Domain": "Software & IT",
+        "Complexity": "Intermediate"
+    },
+    {
+        "Query ID": "048",
+        "Natural Language Query": "Can you analyze the joined data from github repos files and github_repos contents, focusing only on files ending with '.py' or '.r', then extract Python modules from 'import' or 'from ... import' lines and R libraries from 'library(...)' lines, count their occurrences, and finally list the results sorted by language and by the number of occurrences in descending order?",
+        "Category": "Descriptive",
+        "Table(s) Used": [
+            "GITHUB_REPOS_SAMPLE_CONTENTS",
+            "GITHUB_REPOS_SAMPLE_FILES"
+        ],
+        "Domain": "Software & IT",
+        "Complexity": "Intermediate"
+    },
+    {
+        "Query ID": "049",
+        "Natural Language Query": "How large are the DICOM image files with SEG or RTSTRUCT modalities and the SOP Class UID \"1.2.840.10008.5.1.4.1.1.66.4\", when grouped by collection, study, and series IDs, if they have no references to other series, images, or sources? Can you also provide a viewer URL formatted as \"https://viewer.imaging.datacommons.cancer.gov/viewer/\" followed by the study ID, and list these sizes in kilobytes, sorted from largest to smallest?",
+        "Category": "Descriptive",
+        "Table(s) Used": [
+            "IDC_V17_DICOM_ALL"
+        ],
+        "Domain": "Marketing",
+        "Complexity": "Basic"
+    },
+    {
+        "Query ID": "050",
+        "Natural Language Query": "In publicly accessible DICOM data where the Modality is 'SEG' and the SOPClassUID is '1.2.840.10008.5.1.4.1.1.66.4', and each segmentation references its original SOPInstanceUID, which five segmentation categories (by 'SegmentedPropertyCategory.CodeMeaning') occur most frequently?",
+        "Category": "Descriptive",
+        "Table(s) Used": [
+            "IDC_V17_DICOM_ALL",
+            "IDC_V17_SEGMENTATIONS"
+        ],
+        "Domain": "Marketing",
+        "Complexity": "Intermediate"
+    },
+    {
+        "Query ID": "051",
+        "Natural Language Query": "Could you please find the name of the repository that contains the most copied non-binary Swift file in the dataset, ensuring each file is uniquely identified by its ID?",
+        "Category": "Descriptive",
+        "Table(s) Used": [
+            "GITHUB_REPOS_SAMPLE_CONTENTS",
+            "GITHUB_REPOS_SAMPLE_FILES"
+        ],
+        "Domain": "Software & IT",
+        "Complexity": "Intermediate"
+    },
+    {
+        "Query ID": "052",
+        "Natural Language Query": "Calculate the total circulating supply of 'BNB' tokens (in units divided by 10^18) by summing balances of all non-zero addresses, where each address\u2019s balance equals its total received BNB minus sent BNB. Exclude transactions involving the zero address (0x000...) for both senders and receivers.",
+        "Category": "Descriptive",
+        "Table(s) Used": [
+            "ETHEREUM_BLOCKCHAIN_TOKENS",
+            "ETHEREUM_BLOCKCHAIN_TOKEN_TRANSFERS"
+        ],
+        "Domain": "Finance",
+        "Complexity": "Intermediate"
+    },
+    {
+        "Query ID": "053",
+        "Natural Language Query": "Can you list all unique pairs of embedding medium and staining substance code meanings, along with the number of occurrences for each pair, based on distinct embedding medium and staining substance codes from the 'SM' modality in the DICOM dataset's un-nested specimen preparation sequences, ensuring that the codes are from the SCT coding scheme?",
+        "Category": "Descriptive",
+        "Table(s) Used": [
+            "IDC_V17_DICOM_ALL"
+        ],
+        "Domain": "Marketing",
+        "Complexity": "Basic"
+    },
+    {
+        "Query ID": "054",
+        "Natural Language Query": "Please provide a list of the top three revenue-generating films for each actor, along with the average revenue per actor in those films, calculated by dividing the total film revenue equally among the actors for each film.",
+        "Category": "Descriptive",
+        "Table(s) Used": [
+            "SQLITE_SAKILA_FILM",
+            "SQLITE_SAKILA_FILM_ACTOR",
+            "SQLITE_SAKILA_INVENTORY",
+            "SQLITE_SAKILA_PAYMENT",
+            "SQLITE_SAKILA_RENTAL"
+        ],
+        "Domain": "Sports & Entertainment",
+        "Complexity": "Advanced"
+    },
+    {
+        "Query ID": "055",
+        "Natural Language Query": "Can you identify the year and month with the highest rental orders created by the store's staff for each store? Please list the store ID, the year, the month, and the total rentals for those dates.",
+        "Category": "Descriptive",
+        "Table(s) Used": [
+            "SQLITE_SAKILA_RENTAL",
+            "SQLITE_SAKILA_STAFF"
+        ],
+        "Domain": "Sports & Entertainment",
+        "Complexity": "Intermediate"
+    },
+    {
+        "Query ID": "056",
+        "Natural Language Query": "Which top five histological types of breast cancer (BRCA) in the PanCancer Atlas exhibit the highest percentage of CDH1 gene mutations?",
+        "Category": "Descriptive",
+        "Table(s) Used": [
+            "PANCANCER_ATLAS_FILTERED_CLINICAL_PANCAN_PATIENT_WITH_FOLLOWUP_FILTERED",
+            "PANCANCER_ATLAS_FILTERED_MC3_MAF_V5_ONE_PER_TUMOR_SAMPLE"
+        ],
+        "Domain": "Healthcare",
+        "Complexity": "Intermediate"
+    },
+    {
+        "Query ID": "057",
+        "Natural Language Query": "Identify the difference in the number of the oldest and youngest users registered between January 1, 2019, and April 30, 2022, from our e-commerce platform data.",
+        "Category": "Descriptive",
+        "Table(s) Used": [
+            "THELOOK_ECOMMERCE_USERS"
+        ],
+        "Domain": "E-commerce",
+        "Complexity": "Basic"
+    },
+    {
+        "Query ID": "058",
+        "Natural Language Query": "Considering only CT images from the 'nlst' collection, what are the average series sizes in MiB for the top 3 patients with the highest slice interval difference tolerance (calculated as the difference between the maximum and minimum unique slice intervals within their series) and the top 3 patients with the highest maximum exposure difference (calculated as the difference between the maximum and minimum unique exposure values within their series), where the series size is determined by summing the instance sizes of all images in a series and converting it to MiB?",
+        "Category": "Descriptive",
+        "Table(s) Used": [
+            "IDC_V17_DICOM_ALL"
+        ],
+        "Domain": "Marketing",
+        "Complexity": "Basic"
+    },
+    {
+        "Query ID": "059",
+        "Natural Language Query": "From the union of the specified MR series with SeriesInstanceUID 1.3.6.1.4.1.14519.5.2.1.3671.4754.105976129314091491952445656147 and all associated segmentation instances, which modality has the greatest number of SOP instances in total, and how many are there?",
+        "Category": "Descriptive",
+        "Table(s) Used": [
+            "IDC_V17_DICOM_ALL",
+            "IDC_V17_SEGMENTATIONS"
+        ],
+        "Domain": "Marketing",
+        "Complexity": "Intermediate"
+    },
+    {
+        "Query ID": "060",
+        "Natural Language Query": "For the NXT title that had the shortest match (excluding titles with \"title change\"), what were the names of the two wrestlers involved?",
+        "Category": "Descriptive",
+        "Table(s) Used": [
+            "WWE_BELTS",
+            "WWE_CARDS",
+            "WWE_EVENTS",
+            "WWE_LOCATIONS",
+            "WWE_MATCHES",
+            "WWE_PROMOTIONS",
+            "WWE_WRESTLERS"
+        ],
+        "Domain": "Sports & Entertainment",
+        "Complexity": "Advanced"
+    },
+    {
+        "Query ID": "061",
+        "Natural Language Query": "What was the total number of flights operated by each aircraft type?",
+        "Category": "Descriptive",
+        "Table(s) Used": [
+            "AIRLINES_FLIGHTS",
+            "AIRLINES_AIRCRAFTS_DATA"
+        ],
+        "Domain": "Transportation",
+        "Complexity": "Intermediate"
+    },
+    {
+        "Query ID": "062",
+        "Natural Language Query": "How do the scheduled departure and arrival times vary across different airports?",
+        "Category": "Descriptive",
+        "Table(s) Used": [
+            "AIRLINES_FLIGHTS",
+            "AIRLINES_AIRPORTS_DATA"
+        ],
+        "Domain": "Transportation",
+        "Complexity": "Intermediate"
+    },
+    {
+        "Query ID": "063",
+        "Natural Language Query": "Which aircraft types have the longest and shortest ranges, and how do these compare to the average range of all aircraft?",
+        "Category": "Descriptive",
+        "Table(s) Used": [
+            "AIRLINES_AIRCRAFTS_DATA"
+        ],
+        "Domain": "Transportation",
+        "Complexity": "Basic"
+    },
+    {
+        "Query ID": "064",
+        "Natural Language Query": "How did the number of transactions vary by customer segment and region over time?",
+        "Category": "Descriptive",
+        "Table(s) Used": [
+            "BANK_SALES_TRADING_CLEANED_WEEKLY_SALES"
+        ],
+        "Domain": "Finance",
+        "Complexity": "Basic"
+    },
+    {
+        "Query ID": "065",
+        "Natural Language Query": "What is the total number of orders?",
+        "Category": "Descriptive",
+        "Table(s) Used": [
+            "BRAZILIAN_E_COMMERCE_OLIST_ORDERS"
+        ],
+        "Domain": "E-commerce",
+        "Complexity": "Basic"
+    },
+    {
+        "Query ID": "066",
+        "Natural Language Query": "How do order volumes vary by region?",
+        "Category": "Descriptive",
+        "Table(s) Used": ["BRAZILIAN_E_COMMERCE_OLIST_ORDERS","BRAZILIAN_E_COMMERCE_OLIST_CUSTOMERS"],
+        "Domain": "E-commerce",
+        "Complexity": "Advanced"
+    },
+    {
+        "Query ID": "067",
+        "Natural Language Query": "What are the seasonal trends in order volumes over time?",
+        "Category": "Descriptive",
+        "Table(s) Used": [
+            "BRAZILIAN_E_COMMERCE_OLIST_ORDERS"
+        ],
+        "Domain": "E-commerce",
+        "Complexity": "Basic"
+    },
+    {
+        "Query ID": "068",
+        "Natural Language Query": "How do the number of collisions vary by jurisdiction and road surface condition?",
+        "Category": "Descriptive",
+        "Table(s) Used": [
+            "CALIFORNIA_TRAFFIC_COLLISION_COLLISIONS"
+        ],
+        "Domain": "Transportation",
+        "Complexity": "Basic"
+    },
+    {
+        "Query ID": "069",
+        "Natural Language Query": "How do the causes of death vary across different age groups?",
+        "Category": "Descriptive",
+        "Table(s) Used": [
+            "DEATH_DEATHRECORDS",
+            "DEATH_AGERECODE12",
+            "DEATH_AGERECODE27",
+            "DEATH_AGERECODE52",
+            "DEATH_ICD10CODE"
+        ],
+        "Domain": "Healthcare",
+        "Complexity": "Advanced"
+    },
+    {
+        "Query ID": "070",
+        "Natural Language Query": "What are the top causes of death for each age group, and how do these causes vary by sex?",
+        "Category": "Descriptive",
+        "Table(s) Used": [
+            "DEATH_DEATHRECORDS",
+            "DEATH_AGERECODE12",
+            "DEATH_AGERECODE27",
+            "DEATH_AGERECODE52",
+            "DEATH_ICD10CODE"
+        ],
+        "Domain": "Healthcare",
+        "Complexity": "Advanced"
+    },
+    {
+        "Query ID": "071",
+        "Natural Language Query": "What was the total number of deliveries across all channels?",
+        "Category": "Descriptive",
+        "Table(s) Used": [
+            "DELIVERY_CENTER_DELIVERIES",
+            "DELIVERY_CENTER_ORDERS",
+            "DELIVERY_CENTER_CHANNELS"
+        ],
+        "Domain": "Logistics & Retail",
+        "Complexity": "Intermediate"
+    },
+    {
+        "Query ID": "072",
+        "Natural Language Query": "What were the top 3 store segments by total order amount across all hubs?",
+        "Category": "Descriptive",
+        "Table(s) Used": [
+            "DELIVERY_CENTER_ORDERS",
+            "DELIVERY_CENTER_STORES"
+        ],
+        "Domain": "Logistics & Retail",
+        "Complexity": "Intermediate"
+    },
+    {
+        "Query ID": "073",
+        "Natural Language Query": "What is the total number of advisories with a CVSS3 score greater than 7?",
+        "Category": "Descriptive",
+        "Table(s) Used": [
+            "DEPS_DEV_V1_ADVISORIES"
+        ],
+        "Domain": "Software & IT",
+        "Complexity": "Basic"
+    },
+    {
+        "Query ID": "074",
+        "Natural Language Query": "What is the average block size?",
+        "Category": "Descriptive",
+        "Table(s) Used": [
+            "ETHEREUM_BLOCKCHAIN_BLOCKS"
+        ],
+        "Domain": "Finance",
+        "Complexity": "Basic"
+    },
+    {
+        "Query ID": "075",
+        "Natural Language Query": "What is the total number of matches played across all seasons?",
+        "Category": "Descriptive",
+        "Table(s) Used": [
+            "EU_SOCCER_MATCH"
+        ],
+        "Domain": "Sports & Entertainment",
+        "Complexity": "Basic"
+    },
+    {
+        "Query ID": "076",
+        "Natural Language Query": "Which country has the most teams participating in the league, and how many teams does it have?",
+        "Category": "Descriptive",
+        "Table(s) Used": [
+            "EU_SOCCER_COUNTRY",
+            "EU_SOCCER_LEAGUE",
+            "EU_SOCCER_TEAM"
+        ],
+        "Domain": "Sports & Entertainment",
+        "Complexity": "Intermediate"
+    },
+    {
+        "Query ID": "077",
+        "Natural Language Query": "How did the number of orders vary across different product categories and seller locations?",
+        "Category": "Descriptive",
+        "Table(s) Used": [
+            "E_COMMERCE_ORDERS",
+            "E_COMMERCE_ORDER_ITEMS",
+            "E_COMMERCE_PRODUCTS",
+            "E_COMMERCE_SELLERS",
+            "E_COMMERCE_PRODUCT_CATEGORY_NAME_TRANSLATION"
+        ],
+        "Domain": "E-commerce",
+        "Complexity": "Advanced"
+    },
+    {
+        "Query ID": "078",
+        "Natural Language Query": "What is the total number of races held across all circuits?",
+        "Category": "Descriptive",
+        "Table(s) Used": [
+            "F1_RACES"
+        ],
+        "Domain": "Sports & Entertainment",
+        "Complexity": "Basic"
+    },
+    {
+        "Query ID": "079",
+        "Natural Language Query": "How do the points scored by drivers vary across different constructors?",
+        "Category": "Descriptive",
+        "Table(s) Used": [
+            "F1_RESULTS",
+            "F1_CONSTRUCTORS"
+        ],
+        "Domain": "Sports & Entertainment",
+        "Complexity": "Intermediate"
+    },
+    {
+        "Query ID": "080",
+        "Natural Language Query": "Which driver has achieved the most consistent position in the standings across multiple seasons?",
+        "Category": "Descriptive",
+        "Table(s) Used": [
+            "F1_DRIVER_STANDINGS",
+            "F1_DRIVERS",
+            "F1_RACES"
+        ],
+        "Domain": "Sports & Entertainment",
+        "Complexity": "Intermediate"
+    },
+    {
+        "Query ID": "081",
+        "Natural Language Query": "What is the total number of unique programming languages used across all repositories?",
+        "Category": "Descriptive",
+        "Table(s) Used": [
+            "GITHUB_REPOS_LANGUAGES"
+        ],
+        "Domain": "Software & IT",
+        "Complexity": "Basic"
+    },
+    {
+        "Query ID": "082",
+        "Natural Language Query": "How do the counts of sample files vary across different repositories?",
+        "Category": "Descriptive",
+        "Table(s) Used": [
+            "GITHUB_REPOS_SAMPLE_FILES"
+        ],
+        "Domain": "Software & IT",
+        "Complexity": "Basic"
+    },
+    {
+        "Query ID": "083",
+        "Natural Language Query": "What are the most common file modes used across all sample files in repositories, and how do these modes correlate with the types of licenses used?",
+        "Category": "Descriptive",
+        "Table(s) Used": [
+            "GITHUB_REPOS_SAMPLE_FILES",
+            "GITHUB_REPOS_LICENSES"
+        ],
+        "Domain": "Software & IT",
+        "Complexity": "Intermediate"
+    },
+    {
+        "Query ID": "084",
+        "Natural Language Query": "What are the most common ad formats used by verified advertisers?",
+        "Category": "Descriptive",
+        "Table(s) Used": [
+            "GOOGLE_ADS_TRANSPARENCY_CENTER_CREATIVE_STATS"
+        ],
+        "Domain": "Marketing",
+        "Complexity": "Basic"
+    },
+    {
+        "Query ID": "085",
+        "Natural Language Query": "What percentage of ads are funded by Google Ad Grants across different topics?",
+        "Category": "Descriptive",
+        "Table(s) Used": [
+            "GOOGLE_ADS_TRANSPARENCY_CENTER_CREATIVE_STATS"
+        ],
+        "Domain": "Marketing",
+        "Complexity": "Basic"
+    },
+    {
+        "Query ID": "086",
+        "Natural Language Query": "What is the total number of individuals across all families?",
+        "Category": "Descriptive",
+        "Table(s) Used": [
+            "HUMAN_GENOME_VARIANTS__1000_GENOMES_PEDIGREE"
+        ],
+        "Domain": "Healthcare",
+        "Complexity": "Basic"
+    },
+    {
+        "Query ID": "087",
+        "Natural Language Query": "What are the top three most common relationships among individuals with third-order relatives?",
+        "Category": "Descriptive",
+        "Table(s) Used": [
+            "HUMAN_GENOME_VARIANTS__1000_GENOMES_PEDIGREE"
+        ],
+        "Domain": "Healthcare",
+        "Complexity": "Basic"
+    },
+    {
+        "Query ID": "088",
+        "Natural Language Query": "What is the total number of subjects across all collections?",
+        "Category": "Descriptive",
+        "Table(s) Used": [
+            "IDC_V17_ANALYSIS_RESULTS_METADATA",
+            "IDC_V17_ORIGINAL_COLLECTIONS_METADATA"
+        ],
+        "Domain": "Marketing",
+        "Complexity": "Intermediate"
+    },
+    {
+        "Query ID": "089",
+        "Natural Language Query": "How do the quantitative measurements vary across different finding sites?",
+        "Category": "Descriptive",
+        "Table(s) Used": [
+            "IDC_V17_QUANTITATIVE_MEASUREMENTS"
+        ],
+        "Domain": "Marketing",
+        "Complexity": "Basic"
+    },
+    {
+        "Query ID": "090",
+        "Natural Language Query": "What are the top 5 most common findings across all measurement groups, and how do they relate to the cancer type?",
+        "Category": "Descriptive",
+        "Table(s) Used": [
+            "IDC_V17_MEASUREMENT_GROUPS",
+            "IDC_V17_ANALYSIS_RESULTS_METADATA"
+        ],
+        "Domain": "Marketing",
+        "Complexity": "Intermediate"
+    },
+    {
+        "Query ID": "091",
+        "Natural Language Query": "What was the total sale dollars across all categories?",
+        "Category": "Descriptive",
+        "Table(s) Used": [
+            "IOWA_LIQUOR_SALES_SALES"
+        ],
+        "Domain": "Logistics & Retail",
+        "Complexity": "Basic"
+    },
+    {
+        "Query ID": "092",
+        "Natural Language Query": "How did the sale dollars vary across different categories and counties?",
+        "Category": "Descriptive",
+        "Table(s) Used": [
+            "IOWA_LIQUOR_SALES_SALES"
+        ],
+        "Domain": "Logistics & Retail",
+        "Complexity": "Basic"
+    },
+    {
+        "Query ID": "093",
+        "Natural Language Query": "What are the top categories by sale dollars over time, and how do they compare across different counties?",
+        "Category": "Descriptive",
+        "Table(s) Used": [
+            "IOWA_LIQUOR_SALES_SALES"
+        ],
+        "Domain": "Logistics & Retail",
+        "Complexity": "Basic"
+    },
+    {
+        "Query ID": "094",
+        "Natural Language Query": "What was the total number of matches played across all seasons?",
+        "Category": "Descriptive",
+        "Table(s) Used": [
+            "IPL_MATCH"
+        ],
+        "Domain": "Sports & Entertainment",
+        "Complexity": "Basic"
+    },
+    {
+        "Query ID": "095",
+        "Natural Language Query": "How did the number of matches won by each team vary across different seasons?",
+        "Category": "Descriptive",
+        "Table(s) Used": [
+            "IPL_MATCH",
+            "IPL_TEAM"
+        ],
+        "Domain": "Sports & Entertainment",
+        "Complexity": "Intermediate"
+    },
+    {
+        "Query ID": "096",
+        "Natural Language Query": "Which player had the highest number of man-of-the-match awards across all seasons and what was their batting hand preference?",
+        "Category": "Descriptive",
+        "Table(s) Used": [
+            "IPL_MATCH",
+            "IPL_PLAYER"
+        ],
+        "Domain": "Sports & Entertainment",
+        "Complexity": "Intermediate"
+    },
+    {
+        "Query ID": "097",
+        "Natural Language Query": "What is the total number of unique users who have made a purchase?",
+        "Category": "Descriptive",
+        "Table(s) Used": [
+            "LOG_PURCHASE_LOG"
+        ],
+        "Domain": "Software & IT",
+        "Complexity": "Basic"
+    },
+    {
+        "Query ID": "098",
+        "Natural Language Query": "What is the total number of albums?",
+        "Category": "Descriptive",
+        "Table(s) Used": [
+            "MUSIC_ALBUM"
+        ],
+        "Domain": "Sports & Entertainment",
+        "Complexity": "Basic"
+    },
+    {
+        "Query ID": "099",
+        "Natural Language Query": "How many albums does each artist have on average?",
+        "Category": "Descriptive",
+        "Table(s) Used": [
+            "MUSIC_ALBUM",
+            "MUSIC_ARTIST"
+        ],
+        "Domain": "Sports & Entertainment",
+        "Complexity": "Intermediate"
+    },
+    {
+        "Query ID": "100",
+        "Natural Language Query": "What is the total number of breweries?",
+        "Category": "Descriptive",
+        "Table(s) Used": [
+            "ORACLE_SQL_BREWERIES"
+        ],
+        "Domain": "Databases",
+        "Complexity": "Basic"
+    },
+    {
+        "Query ID": "101",
+        "Natural Language Query": "What are the top-selling products across all months?",
+        "Category": "Descriptive",
+        "Table(s) Used": [
+            "ORACLE_SQL_MONTHLY_SALES"
+        ],
+        "Domain": "Databases",
+        "Complexity": "Basic"
+    },
+    {
+        "Query ID": "102",
+        "Natural Language Query": "What is the total number of films available?",
+        "Category": "Descriptive",
+        "Table(s) Used": [
+            "PAGILA_FILM"
+        ],
+        "Domain": "Sports & Entertainment",
+        "Complexity": "Basic"
+    },
+    {
+        "Query ID": "103",
+        "Natural Language Query": "Which customer segments have the highest average rental frequency and what are their preferred film genres?",
+        "Category": "Descriptive",
+        "Table(s) Used": [
+            "PAGILA_CUSTOMER",
+            "PAGILA_RENTAL",
+            "PAGILA_INVENTORY",
+            "PAGILA_FILM",
+            "PAGILA_FILM_CATEGORY"
+        ],
+        "Domain": "Sports & Entertainment",
+        "Complexity": "Advanced"
+    },
+    {
+        "Query ID": "104",
+        "Natural Language Query": "What was the total number of participants across all studies?",
+        "Category": "Descriptive",
+        "Table(s) Used": [
+            "PANCANCER_ATLAS_FILTERED_ALL_CNVR_DATA_BY_GENE_FILTERED",
+            "PANCANCER_ATLAS_FILTERED_MC3_MAF_V5_ONE_PER_TUMOR_SAMPLE",
+            "PANCANCER_ATLAS_FILTERED_PURITY_PLOIDY_ALL_SAMPLES_FILTERED",
+            "PANCANCER_ATLAS_FILTERED_TCGA_RPPA_PANCAN_CLEAN_FILTERED"
+        ],
+        "Domain": "Healthcare",
+        "Complexity": "Advanced"
+    },
+    {
+        "Query ID": "105",
+        "Natural Language Query": "How did the distribution of variant classifications vary across different studies?",
+        "Category": "Descriptive",
+        "Table(s) Used": [
+            "PANCANCER_ATLAS_FILTERED_MC3_MAF_V5_ONE_PER_TUMOR_SAMPLE"
+        ],
+        "Domain": "Healthcare",
+        "Complexity": "Basic"
+    },
+    {
+        "Query ID": "106",
+        "Natural Language Query": "What is the total number of patent disclosures across all categories?",
+        "Category": "Descriptive",
+        "Table(s) Used": [
+            "PATENTS_GOOGLE_DISCLOSURES_13"
+        ],
+        "Domain": "Legal and Technology",
+        "Complexity": "Basic"
+    },
+    {
+        "Query ID": "107",
+        "Natural Language Query": "What is the distribution of patent owners across different disclosure events?",
+        "Category": "Descriptive",
+        "Table(s) Used": [
+            "PATENTS_GOOGLE_DISCLOSURES_13"
+        ],
+        "Domain": "Legal and Technology",
+        "Complexity": "Basic"
+    },
+    {
+        "Query ID": "108",
+        "Natural Language Query": "What are the top patent owners by the number of disclosures in each standard?",
+        "Category": "Descriptive",
+        "Table(s) Used": [
+            "PATENTS_GOOGLE_DISCLOSURES_13"
+        ],
+        "Domain": "Legal and Technology",
+        "Complexity": "Basic"
+    },
+    {
+        "Query ID": "109",
+        "Natural Language Query": "What is the total number of films in the database?",
+        "Category": "Descriptive",
+        "Table(s) Used": [
+            "SQLITE_SAKILA_FILM"
+        ],
+        "Domain": "Sports & Entertainment",
+        "Complexity": "Basic"
+    },
+    {
+        "Query ID": "110",
+        "Natural Language Query": "How many customers are there in each store?",
+        "Category": "Descriptive",
+        "Table(s) Used": [
+            "SQLITE_SAKILA_CUSTOMER",
+            "SQLITE_SAKILA_STORE"
+        ],
+        "Domain": "Sports & Entertainment",
+        "Complexity": "Intermediate"
+    },
+    {
+        "Query ID": "111",
+        "Natural Language Query": "What was the average score across all solutions?",
+        "Category": "Descriptive",
+        "Table(s) Used": [
+            "STACKING_SOLUTION"
+        ],
+        "Domain": "Software & IT",
+        "Complexity": "Basic"
+    },
+    {
+        "Query ID": "112",
+        "Natural Language Query": "How did the average importance of features vary across different versions of the stacking model?",
+        "Category": "Descriptive",
+        "Table(s) Used": [
+            "STACKING_FEATURE_IMPORTANCE"
+        ],
+        "Domain": "Software & IT",
+        "Complexity": "Basic"
+    },
+    {
+        "Query ID": "113",
+        "Natural Language Query": "What are the top 3 most important features contributing to the model's performance across all versions and steps?",
+        "Category": "Descriptive",
+        "Table(s) Used": [
+            "STACKING_FEATURE_IMPORTANCE"
+        ],
+        "Domain": "Software & IT",
+        "Complexity": "Basic"
+    },
+    {
+        "Query ID": "114",
+        "Natural Language Query": "What is the average beta value for DNA methylation across all samples?",
+        "Category": "Descriptive",
+        "Table(s) Used": [
+            "TCGA_HG19_DATA_V0_DNA_METHYLATION"
+        ],
+        "Domain": "Healthcare",
+        "Complexity": "Basic"
+    },
+    {
+        "Query ID": "115",
+        "Natural Language Query": "What is the total number of orders placed by customers?",
+        "Category": "Descriptive",
+        "Table(s) Used": [
+            "THELOOK_ECOMMERCE_ORDERS"
+        ],
+        "Domain": "E-commerce",
+        "Complexity": "Basic"
+    }
+]

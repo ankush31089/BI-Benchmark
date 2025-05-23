@@ -1,0 +1,460 @@
+[
+    {
+        "Query ID": "001",
+        "Natural Language Query": "Which fare conditions should be prioritized to increase revenue on specific routes?",
+        "Category": "Prescriptive",
+        "Table(s) Used": [
+            "AIRLINES_TICKET_FLIGHTS",
+            "AIRLINES_FLIGHTS",
+            "AIRLINES_SEATS"
+        ],
+        "Domain": "Transportation",
+        "Complexity": "Advanced"
+    },
+    {
+        "Query ID": "002",
+        "Natural Language Query": "What actions can help identify genes with high copy number variation across different tumor samples?",
+        "Category": "Prescriptive",
+        "Table(s) Used": [
+            "PANCANCER_ATLAS_FILTERED_ALL_CNVR_DATA_BY_GENE_FILTERED"
+        ],
+        "Domain": "Healthcare",
+        "Complexity": "Basic"
+    },
+    {
+        "Query ID": "003",
+        "Natural Language Query": "For a given cancer type, which protein markers are most strongly associated with tumor progression, and how can this information be used to develop targeted therapies?",
+        "Category": "Prescriptive",
+        "Table(s) Used": [
+            "PANCANCER_ATLAS_FILTERED_TCGA_RPPA_PANCAN_CLEAN_FILTERED",
+            "PANCANCER_ATLAS_FILTERED_ALL_CNVR_DATA_BY_GENE_FILTERED",
+            "PANCANCER_ATLAS_FILTERED_MC3_MAF_V5_ONE_PER_TUMOR_SAMPLE"
+        ],
+        "Domain": "Healthcare",
+        "Complexity": "Advanced"
+    },
+    {
+        "Query ID": "004",
+        "Natural Language Query": "How can we optimize feature selection to enhance the performance of regression models?",
+        "Category": "Prescriptive",
+        "Table(s) Used": [
+            "STACKING_EDA",
+            "STACKING_FEATURE_IMPORTANCE",
+            "STACKING_MODEL_IMPORTANCE",
+            "STACKING_SOLUTION"
+        ],
+        "Domain": "Software & IT",
+        "Complexity": "Advanced"
+    },
+    {
+        "Query ID": "005",
+        "Natural Language Query": "Given the available data on traffic collisions, what combination of factors such as road type, weather conditions, and time of day would result in the highest risk of a severe collision, and how can this risk be mitigated?",
+        "Category": "Prescriptive",
+        "Table(s) Used": [
+            "CALIFORNIA_TRAFFIC_COLLISION_COLLISIONS",
+            "CALIFORNIA_TRAFFIC_COLLISION_PARTIES",
+            "CALIFORNIA_TRAFFIC_COLLISION_VICTIMS"
+        ],
+        "Domain": "Transportation",
+        "Complexity": "Advanced"
+    },
+    {
+        "Query ID": "006",
+        "Natural Language Query": "Considering the attributes of players, how can a team manager decide on the optimal lineup for an upcoming match against a specific opponent?",
+        "Category": "Prescriptive",
+        "Table(s) Used": [
+            "EU_SOCCER_MATCH",
+            "EU_SOCCER_PLAYER",
+            "EU_SOCCER_PLAYER_ATTRIBUTES",
+            "EU_SOCCER_TEAM",
+            "EU_SOCCER_TEAM_ATTRIBUTES"
+        ],
+        "Domain": "Sports & Entertainment",
+        "Complexity": "Advanced"
+    },
+    {
+        "Query ID": "007",
+        "Natural Language Query": "Given the current team attributes and past match data, what combination of team formation, player selection, and in-match strategies would maximize the chances of winning against a stronger opponent?",
+        "Category": "Prescriptive",
+        "Table(s) Used": [
+            "EU_SOCCER_MATCH",
+            "EU_SOCCER_TEAM_ATTRIBUTES",
+            "EU_SOCCER_PLAYER_ATTRIBUTES",
+            "EU_SOCCER_TEAM",
+            "EU_SOCCER_PLAYER"
+        ],
+        "Domain": "Sports & Entertainment",
+        "Complexity": "Advanced"
+    },
+    {
+        "Query ID": "008",
+        "Natural Language Query": "How can we optimize match duration to improve the chances of a title change?",
+        "Category": "Prescriptive",
+        "Table(s) Used": [
+            "WWE_MATCHES",
+            "WWE_MATCH_TYPES"
+        ],
+        "Domain": "Sports & Entertainment",
+        "Complexity": "Intermediate"
+    },
+    {
+        "Query ID": "009",
+        "Natural Language Query": "How can the rate of fatal collisions be reduced among drivers who have been drinking?",
+        "Category": "Prescriptive",
+        "Table(s) Used": [
+            "CALIFORNIA_TRAFFIC_COLLISION_COLLISIONS",
+            "CALIFORNIA_TRAFFIC_COLLISION_PARTIES"
+        ],
+        "Domain": "Transportation",
+        "Complexity": "Intermediate"
+    },
+    {
+        "Query ID": "010",
+        "Natural Language Query": "For which types of roads should additional safety measures be prioritized to reduce the frequency of collisions involving pedestrians?",
+        "Category": "Prescriptive",
+        "Table(s) Used": [
+            "CALIFORNIA_TRAFFIC_COLLISION_COLLISIONS",
+            "CALIFORNIA_TRAFFIC_COLLISION_PARTIES"
+        ],
+        "Domain": "Transportation",
+        "Complexity": "Intermediate"
+    },
+    {
+        "Query ID": "011",
+        "Natural Language Query": "What are the most effective ways to reduce the number of collisions caused by drivers who are under the influence of drugs or alcohol during nighttime hours?",
+        "Category": "Prescriptive",
+        "Table(s) Used": [
+            "CALIFORNIA_TRAFFIC_COLLISION_COLLISIONS",
+            "CALIFORNIA_TRAFFIC_COLLISION_PARTIES"
+        ],
+        "Domain": "Transportation",
+        "Complexity": "Intermediate"
+    },
+    {
+        "Query ID": "012",
+        "Natural Language Query": "For which specific age ranges should targeted interventions be implemented to reduce mortality rates?",
+        "Category": "Prescriptive",
+        "Table(s) Used": [
+            "DEATH_AGERECODE12",
+            "DEATH_AGERECODE27",
+            "DEATH_AGERECODE52",
+            "DEATH_DEATHRECORDS"
+        ],
+        "Domain": "Healthcare",
+        "Complexity": "Advanced"
+    },
+    {
+        "Query ID": "013",
+        "Natural Language Query": "How can we optimize the delivery distance to minimize costs for each hub?",
+        "Category": "Prescriptive",
+        "Table(s) Used": [
+            "DELIVERY_CENTER_DELIVERIES",
+            "DELIVERY_CENTER_HUBS",
+            "DELIVERY_CENTER_STORES"
+        ],
+        "Domain": "Logistics & Retail",
+        "Complexity": "Advanced"
+    },
+    {
+        "Query ID": "014",
+        "Natural Language Query": "For which store segments and hubs should we prioritize delivery resources to maximize order fulfillment rates?",
+        "Category": "Prescriptive",
+        "Table(s) Used": [
+            "DELIVERY_CENTER_ORDERS",
+            "DELIVERY_CENTER_STORES",
+            "DELIVERY_CENTER_HUBS"
+        ],
+        "Domain": "Logistics & Retail",
+        "Complexity": "Advanced"
+    },
+    {
+        "Query ID": "015",
+        "Natural Language Query": "How can a team optimize its player selection to achieve better match outcomes?",
+        "Category": "Prescriptive",
+        "Table(s) Used": [
+            "EU_SOCCER_MATCH",
+            "EU_SOCCER_PLAYER",
+            "EU_SOCCER_PLAYER_ATTRIBUTES",
+            "EU_SOCCER_TEAM"
+        ],
+        "Domain": "Sports & Entertainment",
+        "Complexity": "Advanced"
+    },
+    {
+        "Query ID": "016",
+        "Natural Language Query": "What are the most effective ways to improve the position order of drivers in races?",
+        "Category": "Prescriptive",
+        "Table(s) Used": [
+            "F1_RESULTS",
+            "F1_LAP_POSITIONS",
+            "F1_LAP_TIMES",
+            "F1_QUALIFYING",
+            "F1_PIT_STOPS",
+            "F1_RACES"
+        ],
+        "Domain": "Sports & Entertainment",
+        "Complexity": "Advanced"
+    },
+    {
+        "Query ID": "017",
+        "Natural Language Query": "Which constructor should a driver choose to maximize their points in a season?",
+        "Category": "Prescriptive",
+        "Table(s) Used": [
+            "F1_CONSTRUCTORS",
+            "F1_CONSTRUCTOR_STANDINGS",
+            "F1_CONSTRUCTOR_RESULTS",
+            "F1_DRIVES",
+            "F1_DRIVER_STANDINGS"
+        ],
+        "Domain": "Sports & Entertainment",
+        "Complexity": "Advanced"
+    },
+    {
+        "Query ID": "018",
+        "Natural Language Query": "How can we optimize the selection of repository languages to attract more watchers?",
+        "Category": "Prescriptive",
+        "Table(s) Used": [
+            "GITHUB_REPOS_LANGUAGES",
+            "GITHUB_REPOS_SAMPLE_REPOS"
+        ],
+        "Domain": "Software & IT",
+        "Complexity": "Intermediate"
+    },
+    {
+        "Query ID": "019",
+        "Natural Language Query": "What combination of repository languages and licenses would yield the highest watch counts for new repositories?",
+        "Category": "Prescriptive",
+        "Table(s) Used": [
+            "GITHUB_REPOS_LANGUAGES",
+            "GITHUB_REPOS_LICENSES",
+            "GITHUB_REPOS_SAMPLE_REPOS"
+        ],
+        "Domain": "Software & IT",
+        "Complexity": "Advanced"
+    },
+    {
+        "Query ID": "020",
+        "Natural Language Query": "Which combination of repository characteristics, such as languages, licenses, and sample file modes, would maximize watch counts while minimizing the number of repositories with low watch counts?",
+        "Category": "Prescriptive",
+        "Table(s) Used": [
+            "GITHUB_REPOS_SAMPLE_REPOS",
+            "GITHUB_REPOS_SAMPLE_FILES",
+            "GITHUB_REPOS_LANGUAGES",
+            "GITHUB_REPOS_LICENSES"
+        ],
+        "Domain": "Software & IT",
+        "Complexity": "Advanced"
+    },
+    {
+        "Query ID": "021",
+        "Natural Language Query": "What is the optimal allocation of resources to different types of repositories, considering their languages, licenses, and current watch counts, to achieve the highest overall watch count?",
+        "Category": "Prescriptive",
+        "Table(s) Used": [
+            "GITHUB_REPOS_LANGUAGES",
+            "GITHUB_REPOS_LICENSES",
+            "GITHUB_REPOS_SAMPLE_REPOS"
+        ],
+        "Domain": "Software & IT",
+        "Complexity": "Advanced"
+    },
+    {
+        "Query ID": "022",
+        "Natural Language Query": "Given the current distribution of ad formats and advertiser verification statuses, what combination of ad format adjustments and verification status targeting would maximize ad visibility while minimizing removals?",
+        "Category": "Prescriptive",
+        "Table(s) Used": [
+            "GOOGLE_ADS_TRANSPARENCY_CENTER_CREATIVE_STATS",
+            "GOOGLE_ADS_TRANSPARENCY_CENTER_REMOVED_CREATIVE_STATS"
+        ],
+        "Domain": "Marketing",
+        "Complexity": "Intermediate"
+    },
+    {
+        "Query ID": "023",
+        "Natural Language Query": "For individuals with known siblings, what relationship dynamics should be considered to reduce instances of unexpected parent-child relationships?",
+        "Category": "Prescriptive",
+        "Table(s) Used": [
+            "HUMAN_GENOME_VARIANTS__1000_GENOMES_PEDIGREE",
+            "HUMAN_GENOME_VARIANTS__1000_GENOMES_SAMPLE_INFO"
+        ],
+        "Domain": "Healthcare",
+        "Complexity": "Intermediate"
+    },
+    {
+        "Query ID": "024",
+        "Natural Language Query": "Given the population descriptions, how can we tailor our approach to identifying avuncular relationships to minimize errors?",
+        "Category": "Prescriptive",
+        "Table(s) Used": [
+            "HUMAN_GENOME_VARIANTS__1000_GENOMES_PEDIGREE",
+            "HUMAN_GENOME_VARIANTS__1000_GENOMES_SAMPLE_INFO"
+        ],
+        "Domain": "Healthcare",
+        "Complexity": "Intermediate"
+    },
+    {
+        "Query ID": "025",
+        "Natural Language Query": "Considering the variables of gender, population, and family structure, what combination of factors would most effectively predict the likelihood of non-paternity?",
+        "Category": "Prescriptive",
+        "Table(s) Used": [
+            "HUMAN_GENOME_VARIANTS__1000_GENOMES_PEDIGREE",
+            "HUMAN_GENOME_VARIANTS__1000_GENOMES_SAMPLE_INFO"
+        ],
+        "Domain": "Healthcare",
+        "Complexity": "Intermediate"
+    },
+    {
+        "Query ID": "026",
+        "Natural Language Query": "How can we optimize the pricing strategy for different categories to maximize revenue?",
+        "Category": "Prescriptive",
+        "Table(s) Used": [
+            "IOWA_LIQUOR_SALES_SALES"
+        ],
+        "Domain": "Logistics & Retail",
+        "Complexity": "Basic"
+    },
+    {
+        "Query ID": "027",
+        "Natural Language Query": "What pricing adjustments should be made for items with high bottle volumes to increase overall revenue?",
+        "Category": "Prescriptive",
+        "Table(s) Used": [
+            "IOWA_LIQUOR_SALES_SALES"
+        ],
+        "Domain": "Logistics & Retail",
+        "Complexity": "Basic"
+    },
+    {
+        "Query ID": "028",
+        "Natural Language Query": "What combination of item description, pack size, and bottle volume would yield the highest sale dollars while minimizing state bottle costs?",
+        "Category": "Prescriptive",
+        "Table(s) Used": [
+            "IOWA_LIQUOR_SALES_SALES"
+        ],
+        "Domain": "Logistics & Retail",
+        "Complexity": "Basic"
+    },
+    {
+        "Query ID": "029",
+        "Natural Language Query": "Given the current sales data, what would be the optimal distribution of items across different store locations to maximize volume sold in liters?",
+        "Category": "Prescriptive",
+        "Table(s) Used": [
+            "IOWA_LIQUOR_SALES_SALES"
+        ],
+        "Domain": "Logistics & Retail",
+        "Complexity": "Basic"
+    },
+    {
+        "Query ID": "030",
+        "Natural Language Query": "How can we prioritize genes for further study based on their frequency of mutation across various cancer types?",
+        "Category": "Prescriptive",
+        "Table(s) Used": [
+            "PANCANCER_ATLAS_FILTERED_ALL_CNVR_DATA_BY_GENE_FILTERED",
+            "PANCANCER_ATLAS_FILTERED_MC3_MAF_V5_ONE_PER_TUMOR_SAMPLE"
+        ],
+        "Domain": "Healthcare",
+        "Complexity": "Intermediate"
+    },
+    {
+        "Query ID": "031",
+        "Natural Language Query": "How do different sample types (e.g., primary tumor, metastatic, recurrent) vary in terms of genetic mutations, and what implications does this have for treatment strategies?",
+        "Category": "Prescriptive",
+        "Table(s) Used": [
+            "PANCANCER_ATLAS_FILTERED_ALL_CNVR_DATA_BY_GENE_FILTERED",
+            "PANCANCER_ATLAS_FILTERED_MC3_MAF_V5_ONE_PER_TUMOR_SAMPLE",
+            "PANCANCER_ATLAS_FILTERED_PURITY_PLOIDY_ALL_SAMPLES_FILTERED"
+        ],
+        "Domain": "Healthcare",
+        "Complexity": "Advanced"
+    },
+    {
+        "Query ID": "032",
+        "Natural Language Query": "How can we integrate data on genetic mutations, copy number variation, and protein expression to identify key drivers of tumor progression and develop effective combination therapies?",
+        "Category": "Prescriptive",
+        "Table(s) Used": [
+            "PANCANCER_ATLAS_FILTERED_ALL_CNVR_DATA_BY_GENE_FILTERED",
+            "PANCANCER_ATLAS_FILTERED_MC3_MAF_V5_ONE_PER_TUMOR_SAMPLE",
+            "PANCANCER_ATLAS_FILTERED_TCGA_RPPA_PANCAN_CLEAN_FILTERED"
+        ],
+        "Domain": "Healthcare",
+        "Complexity": "Advanced"
+    },
+    {
+        "Query ID": "033",
+        "Natural Language Query": "Which patent owners should prioritize disclosure events for patents with FRAND licensing commitment to maximize standard adoption?",
+        "Category": "Prescriptive",
+        "Table(s) Used": [
+            "PATENTS_GOOGLE_DISCLOSURES_13"
+        ],
+        "Domain": "Legal and Technology",
+        "Complexity": "Basic"
+    },
+    {
+        "Query ID": "034",
+        "Natural Language Query": "Given the current distribution of patent owners and their licensing commitments, which optimization strategy would result in the highest overall standard adoption rate while considering reciprocity and copyright constraints?",
+        "Category": "Prescriptive",
+        "Table(s) Used": [
+            "PATENTS_GOOGLE_DISCLOSURES_13"
+        ],
+        "Domain": "Legal and Technology",
+        "Complexity": "Basic"
+    },
+    {
+        "Query ID": "035",
+        "Natural Language Query": "What actions can help improve model scores for classification problems?",
+        "Category": "Prescriptive",
+        "Table(s) Used": [
+            "STACKING_MODEL_SCORE",
+            "STACKING_MODEL",
+            "STACKING_PROBLEM",
+            "STACKING_SOLUTION"
+        ],
+        "Domain": "Software & IT",
+        "Complexity": "Advanced"
+    },
+    {
+        "Query ID": "036",
+        "Natural Language Query": "What is the optimal number of models to stack for achieving the highest test scores in classification tasks?",
+        "Category": "Prescriptive",
+        "Table(s) Used": [
+            "STACKING_MODEL_SCORE",
+            "STACKING_SOLUTION",
+            "STACKING_PROBLEM"
+        ],
+        "Domain": "Software & IT",
+        "Complexity": "Advanced"
+    },
+    {
+        "Query ID": "037",
+        "Natural Language Query": "What is the optimal resampling strategy and test size to use for maximizing the score of stacked models across different problem types?",
+        "Category": "Prescriptive",
+        "Table(s) Used": [
+            "STACKING_SOLUTION",
+            "STACKING_PROBLEM"
+        ],
+        "Domain": "Software & IT",
+        "Complexity": "Intermediate"
+    },
+    {
+        "Query ID": "038",
+        "Natural Language Query": "Which match types are most likely to result in a title change and how can they be prioritized in event planning?",
+        "Category": "Prescriptive",
+        "Table(s) Used": [
+            "WWE_MATCHES",
+            "WWE_MATCH_TYPES"
+        ],
+        "Domain": "Sports & Entertainment",
+        "Complexity": "Intermediate"
+    },
+    {
+        "Query ID": "039",
+        "Natural Language Query": "Given the current distribution of promotions, locations, and event dates, what scenario would result in the highest number of title changes and how can it be achieved?",
+        "Category": "Prescriptive",
+        "Table(s) Used": [
+            "WWE_MATCHES",
+            "WWE_CARDS",
+            "WWE_EVENTS",
+            "WWE_LOCATIONS",
+            "WWE_PROMOTIONS"
+        ],
+        "Domain": "Sports & Entertainment",
+        "Complexity": "Advanced"
+    }
+]
